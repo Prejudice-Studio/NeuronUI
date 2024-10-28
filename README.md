@@ -1,7 +1,5 @@
 # NeuronUI
 A Light Easy Beautiful UI For RunAway
-# NeuronUI
-A Light Easy Beautiful UI For RunAway
 
 # 2024.1.1  1.0
 更新内容：
