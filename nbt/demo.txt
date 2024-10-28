@@ -1,0 +1,1 @@
+{Count:64b,Damage:0s,Name:"minecraft:apple",WasPickedUp:0b}

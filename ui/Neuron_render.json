@@ -1,0 +1,929 @@
+{
+  "type": "Menu",
+  "title": {
+    "name": "『Render』",
+    "size": 15,
+    "elevation": 4,
+    "background": "$TitleBG",
+    "padding": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "colors": [
+      "$TitleColor",
+      "$TitleColor"
+    ],
+    "margins": [0, 0, 0, 0]
+  },
+  "color": "$MenuColor",
+  "alpha": 0.85,
+  "can_close": true,
+  "hide": true,
+  "margins": [0, 0, 0, 0],
+  "image_scaled_size": 40,
+  "radius": 10,
+  "show_dividers": false,
+  "items": [
+
+    {
+      "type": "Switch",
+      "name": "实体追踪",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [
+          65,
+          65
+        ],
+        "no_circle": true,
+        "off": "close/NeuronOff_Tracer.png",
+        "on": "open/NeuronOn_Tracer.png",
+        "icon": "open/NeuronOn_Tracer.png"
+      },
+      "tag": "fun_tracer",
+      "items": [
+        {
+          "type": "CheckBox",
+          "key": "rainbow",
+          "name": "彩虹",
+          "color": "$TextColor",
+          "size": 8,
+          "checked": true
+        },
+        {
+          "type": "CheckBox",
+          "key": "player",
+          "name": "玩家",
+          "color": "$TextColor",
+          "size": 8,
+          "checked": true
+        },
+        {
+          "type": "CheckBox",
+          "key": "mob",
+          "name": "生物",
+          "color": "$TextColor",
+          "size": 8,
+          "checked": true
+        },
+        {
+          "type": "CheckBox",
+          "key": "item",
+          "name": "掉落物",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "SeekBar",
+          "key": "line_width",
+          "format": "线条宽度%.3f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 0.001,
+          "min": 0.001,
+          "max": 0.1
+        },
+        {
+          "type": "SeekBar",
+          "key": "max_count",
+          "format": "最大数量%d",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 50,
+          "min": 1,
+          "max": 100
+        },
+        {
+          "type": "SeekBar",
+          "key": "max_distance",
+          "format": "最大距离%.2f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 100.0,
+          "min": 50.0,
+          "max": 500.0
+        },
+        {
+          "type": "ColorPicker",
+          "key": "color",
+          "name": "自定义颜色",
+          "color": "$TextColor",
+          "padding": [
+            10,
+            10,
+            10,
+            10
+          ],
+          "default_color": "#FFFFFF",
+          "ok": "确定",
+          "cancel": "取消"
+        }
+      ]
+    },
+    {
+      "type": "Switch",
+      "name": "ESP",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [
+          65,
+          65
+        ],
+        "no_circle": true,
+        "off": "close/NeuronOff_ESP.png",
+        "on": "open/NeuronOn_ESP.png",
+        "icon": "open/NeuronOn_ESP.png"
+      },
+      "tag": "fun_esp",
+      "items": [
+        {
+          "type": "CheckBox",
+          "key": "rainbow",
+          "name": "彩虹",
+          "color": "$TextColor",
+          "size": 8,
+          "checked": true
+        },
+        {
+          "type": "CheckBox",
+          "key": "player",
+          "name": "玩家",
+          "color": "$TextColor",
+          "size": 8,
+          "checked": true
+        },
+        {
+          "type": "CheckBox",
+          "key": "mob",
+          "name": "生物",
+          "color": "$TextColor",
+          "size": 8,
+          "checked": true
+        },
+        {
+          "type": "CheckBox",
+          "key": "item",
+          "name": "掉落物",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "SeekBar",
+          "key": "line_width",
+          "format": "线条宽度%.3f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 0.01,
+          "min": 0.01,
+          "max": 0.5
+        },
+        {
+          "type": "SeekBar",
+          "key": "max_count",
+          "format": "最大数量%d",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 50,
+          "min": 1,
+          "max": 100
+        },
+        {
+          "type": "SeekBar",
+          "key": "max_distance",
+          "format": "最大距离%.2f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 100.0,
+          "min": 50.0,
+          "max": 500.0
+        },
+        {
+          "type": "ColorPicker",
+          "key": "color",
+          "name": "自定义颜色",
+          "color": "$TextColor",
+          "padding": [
+            10,
+            10,
+            10,
+            10
+          ],
+          "default_color": "#FFFFFF",
+          "ok": "确定",
+          "cancel": "取消"
+        },
+        {
+          "type": "RadioGroup",
+          "name": "渲染模式",
+          "color": "$TextColor",
+          "size": 12,
+          "padding": [
+            5,
+            5,
+            5,
+            0
+          ],
+          "key": "mode",
+          "items": [
+            {
+              "key": "2d",
+              "name": "2D",
+              "color": "$TextColor",
+              "size": 8
+            },
+            {
+              "key": "3d",
+              "name": "3D",
+              "color": "$TextColor",
+              "size": 8,
+              "checked": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Switch",
+      "name": "方块透视",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [
+          65,
+          65
+        ],
+        "no_circle": true,
+        "off": "close/NeuronOff_Xray.png",
+        "on": "open/NeuronOn_Xray.png",
+        "icon": "open/NeuronOn_Xray.png"
+      },
+      "tag": "fun_xray",
+      "items": [
+        {
+          "type": "CheckBox",
+          "key": "regex:ore|ancient_debris",
+          "name": "矿物",
+          "color": "$TextColor",
+          "size": 8,
+          "checked": true
+        },
+        {
+          "type": "CheckBox",
+          "key": "regex:lava|water",
+          "name": "液体",
+          "color": "$TextColor",
+          "size": 8,
+          "checked": true
+        },
+        {
+          "type": "CheckBox",
+          "key": "regex:chest|shulker_box",
+          "name": "箱子",
+          "color": "$TextColor",
+          "size": 8,
+          "checked": true
+        },
+        {
+          "type": "CheckBox",
+          "key": "regex:portal|amethyst_block|ancient_debris|command_block|repeating_command_block|chain_command_block|structure_block|deny|allow|bedrock|border_block",
+          "name": "其它",
+          "color": "$TextColor",
+          "size": 8,
+          "checked": true
+        }
+      ]
+    },
+    {
+      "type": "Switch",
+      "name": "方块轮廓",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [
+          65,
+          65
+        ],
+        "no_circle": true,
+        "off": "close/NeuronOff_BlockOutlineRender.png",
+        "on": "open/NeuronOn_BlockOutlineRender.png",
+        "icon": "open/NeuronOn_BlockOutlineRender.png"
+      },
+      "tag": "fun_block_outline",
+      "items": [
+        {
+          "type": "CheckBox",
+          "key": "rainbow",
+          "name": "彩虹",
+          "color": "$TextColor",
+          "size": 8,
+          "checked": true
+        }
+      ]
+    },
+    {
+      "type": "Switch",
+      "name": "主界面模块",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "tag": "fun_hud_module",
+      "checked": true,
+      "items": [
+        {
+          "type": "CheckBox",
+          "key": "show_armor",
+          "name": "显示装备信息",
+          "color": "$TextColor",
+          "size": 8,
+          "checked": true
+        },
+        {
+          "type": "CheckBox",
+          "key": "array_list",
+          "name": "显示功能信息",
+          "color": "$TextColor",
+          "size": 8,
+          "checked": true
+        },
+        {
+          "type": "CheckBox",
+          "key": "short_name",
+          "name": "使用短名称",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "CheckBox",
+          "key": "show_health",
+          "name": "显示实体血条",
+          "color": "$TextColor",
+          "size": 8,
+          "checked": true
+        },
+        {
+          "type": "RadioGroup",
+          "name": "字体",
+          "color": "$TextColor",
+          "size": 12,
+          "padding": [
+            5,
+            5,
+            5,
+            0
+          ],
+          "key": "font",
+          "items": [
+            {
+              "key": "default",
+              "name": "默认",
+              "color": "$TextColor",
+              "size": 8
+            },
+            {
+              "key": "smooth",
+              "name": "光滑",
+              "color": "$TextColor",
+              "size": 8
+            },
+            {
+              "key": "ui",
+              "name": "UI",
+              "color": "$TextColor",
+              "size": 8,
+              "checked": true
+            },
+            {
+              "key": "unicode",
+              "name": "Unicode",
+              "color": "$TextColor",
+              "size": 8
+            }
+          ]
+        },
+        {
+          "type": "SeekBar",
+          "key": "alpha",
+          "format": "透明度%.1f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            10
+          ],
+          "value": 0.7,
+          "min": 0.1,
+          "max": 1.0
+        },
+        {
+          "type": "SeekBar",
+          "key": "cycle_speed",
+          "format": "循环速度%.1f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            10
+          ],
+          "value": 3.0,
+          "min": 1.0,
+          "max": 5.0
+        },
+        {
+          "type": "SeekBar",
+          "key": "saturation",
+          "format": "颜色饱和度%.1f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            10
+          ],
+          "value": 1.0,
+          "min": 1.0,
+          "max": 5.0
+        },
+        {
+          "type": "SeekBar",
+          "key": "array_offset_x",
+          "format": "功能宽度偏移%.2f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 3.0,
+          "min": 0.0,
+          "max": 10.0
+        },
+        {
+          "type": "SeekBar",
+          "key": "array_offset_y",
+          "format": "功能高度偏移%.2f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 3.0,
+          "min": 0.0,
+          "max": 10.0
+        }
+      ],
+      "invoke_methods": [
+        {
+          "name": "setEnabled",
+          "arguments": [
+            "boolean"
+          ],
+          "parameters": [
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Switch",
+      "name": "无粒子显示",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_NoParticle.png",
+        "on":"open/NeuronOn_NoParticle.png",
+        "icon":"open/NeuronOn_NoParticle.png"
+      },
+      "tag": "fun_no_particle"
+    },
+    {
+      "type": "Switch",
+      "name": "名称渲染",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [
+          65,
+          65
+        ],
+        "no_circle": true,
+        "off": "close/NeuronOff_NameTags.png",
+        "on": "open/NeuronOn_NameTags.png",
+        "icon": "open/NeuronOn_NameTags.png"
+      },
+      "tag": "fun_name_tags",
+      "items": [
+        {
+          "type": "CheckBox",
+          "key": "player",
+          "name": "玩家",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "CheckBox",
+          "key": "mob",
+          "name": "生物",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "CheckBox",
+          "key": "show_name",
+          "name": "显示名称",
+          "color": "$TextColor",
+          "checked": true,
+          "size": 8
+        },
+        {
+          "type": "CheckBox",
+          "key": "show_health",
+          "name": "显示血量",
+          "color": "$TextColor",
+          "checked": true,
+          "size": 8
+        },
+        {
+          "type": "CheckBox",
+          "key": "show_armor",
+          "name": "显示装备",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "CheckBox",
+          "key": "show_weapon",
+          "name": "显示武器",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "CheckBox",
+          "key": "show_distance",
+          "name": "显示距离",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "CheckBox",
+          "key": "show_position",
+          "name": "显示坐标",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "CheckBox",
+          "key": "rainbow",
+          "name": "彩虹",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "SeekBar",
+          "key": "size",
+          "format": "文本大小%.2f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 2.99,
+          "min": 0.1,
+          "max": 50.0
+        },
+        {
+          "type": "ColorPicker",
+          "key": "color",
+          "name": "自定义颜色",
+          "color": "$TextColor",
+          "padding": [
+            10,
+            10,
+            10,
+            10
+          ],
+          "default_color": "#FF0000",
+          "ok": "确定",
+          "cancel": "取消"
+        }
+      ]
+    },
+    {
+      "type": "Switch",
+      "name": "箱子渲染",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_ChestESP.png",
+        "on":"open/NeuronOn_ChestESP.png",
+        "icon":"open/NeuronOn_ChestESP.png"
+      },
+      "tag": "fun_chest_esp",
+      "items": [
+        {
+          "type": "CheckBox",
+          "key": "rainbow",
+          "name": "彩虹",
+          "color": "$TextColor",
+          "size": 8,
+          "checked": true
+        },
+        {
+          "type": "CheckBox",
+          "key": "show_name",
+          "name": "显示名称",
+          "color": "$TextColor",
+          "size": 8,
+          "checked": true
+        },
+        {
+          "type": "CheckBox",
+          "key": "show_distance",
+          "name": "显示距离",
+          "color": "$TextColor",
+          "size": 8,
+          "checked": true
+        },
+        {
+          "type": "CheckBox",
+          "key": "show_position",
+          "name": "显示坐标",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "CheckBox",
+          "key": "show_count",
+          "name": "显示物品数量",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "CheckBox",
+          "key": "show_items",
+          "name": "显示物品信息",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "SeekBar",
+          "key": "size",
+          "format": "文本大小%.2f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 2.99,
+          "min": 0.1,
+          "max": 50.0
+        }
+      ]
+    },
+    {
+      "type": "Switch",
+      "name": "方块渲染",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [
+          65,
+          65
+        ],
+        "no_circle": true,
+        "off": "close/NeuronOff_BlockRender.png",
+        "on": "open/NeuronOn_BlockRender.png",
+        "icon": "open/NeuronOn_BlockRender.png"
+      },
+      "tag": "fun_block_render",
+      "items": [
+        {
+          "type": "CheckBox",
+          "key": "minecraft:diamond_ore",
+          "name": "[快捷]钻石矿石",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "CheckBox",
+          "key": "minecraft:gold_ore",
+          "name": "[快捷]金矿石",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "CheckBox",
+          "key": "minecraft:iron_ore",
+          "name": "[快捷]铁矿石",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "CheckBox",
+          "key": "minecraft:smithing_table",
+          "name": "[快捷]锻造台",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "CheckBox",
+          "key": "rainbow",
+          "name": "彩虹",
+          "color": "$TextColor",
+          "size": 8,
+          "checked": true
+        },
+        {
+          "type": "TextView",
+          "key": "list",
+          "name": "显示列表",
+          "color": "$TextColor",
+          "size": 12,
+          "padding": [
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "type": "TextView",
+          "key": "add",
+          "name": "添加新方块",
+          "color": "$TextColor",
+          "size": 12,
+          "padding": [
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "type": "TextView",
+          "key": "remove",
+          "name": "移除方块",
+          "color": "$TextColor",
+          "size": 12,
+          "padding": [
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "type": "SeekBar",
+          "key": "count",
+          "format": "最大渲染数%d",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 50,
+          "min": 1,
+          "max": 100
+        },
+        {
+          "type": "SeekBar",
+          "key": "distance",
+          "format": "渲染距离%.2f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 50.0,
+          "min": 1.0,
+          "max": 1000.0
+        }
+      ]
+    }
+  ]
+}

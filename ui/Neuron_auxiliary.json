@@ -1,0 +1,591 @@
+{
+  "type": "Menu",
+  "title": {
+    "name": "『Auxiliary』",
+    "size": 15,
+    "elevation": 4,
+    "background": "$TitleBG",
+    "padding": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "colors": [
+      "$TitleColor",
+      "$TitleColor"
+    ],
+    "margins": [0, 0, 0, 0]
+  },
+  "color": "$MenuColor",
+  "alpha": 0.85,
+  "can_close": true,
+  "hide": true,
+  "margins": [0, 0, 0, 0],
+  "image_scaled_size": 40,
+  "radius": 10,
+  "show_dividers": false,
+  "items": [
+    {
+      "type": "Switch",
+      "name": "无蛛网/细雪减速",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_NoWeb.png",
+        "on":"open/NeuronOn_NoWeb.png",
+        "icon":"open/NeuronOn_NoWeb.png"
+      },
+      "tag": "fun_no_web"
+    },
+    {
+      "type": "Switch",
+      "name": "使用物品不减速",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_NoSlowDown.png",
+        "on":"open/NeuronOn_NoSlowDown.png",
+        "icon":"open/NeuronOn_NoSlowDown.png"
+      },
+      "tag": "fun_no_slow_down"
+    },
+    {
+      "type": "Switch",
+      "name": "快速建造",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_FastBuild.png",
+        "on":"open/NeuronOn_FastBuild.png",
+        "icon":"open/NeuronOn_FastBuild.png"
+      },
+      "tag": "fun_fast_build",
+      "items": [
+        {
+          "type": "RadioGroup",
+          "key": "mode",
+          "name": "建造模式",
+          "color": "$TextColor",
+          "size": 8,
+          "items": [
+            {
+              "key": "fill",
+              "name": "填充",
+              "color": "$TextColor",
+              "checked": true,
+              "size": 8,
+              "tip": "点击的两个方块位置会作为起点和终点"
+            },
+            {
+              "key": "frame",
+              "name": "框架",
+              "color": "$TextColor",
+              "size": 8,
+              "tip": "点击的两个方块位置会作为起点和终点"
+            },
+            {
+              "key": "hollow",
+              "name": "空心",
+              "color": "$TextColor",
+              "size": 8,
+              "tip": "点击的两个方块位置会作为起点和终点"
+            },
+            {
+              "key": "pellet",
+              "name": "圆球",
+              "color": "$TextColor",
+              "size": 8,
+              "tip": "点击的位置会作为起点"
+            },
+            {
+              "key": "cylinder",
+              "name": "圆柱",
+              "color": "$TextColor",
+              "size": 8,
+              "tip": "点击的位置会作为起点"
+            },
+            {
+              "key": "cone",
+              "name": "圆锥",
+              "color": "$TextColor",
+              "size": 8,
+              "tip": "点击的位置会作为起点"
+            },
+            {
+              "key": "destroy",
+              "name": "破坏",
+              "color": "$TextColor",
+              "size": 8,
+              "tip": "点击的两个方块位置会作为起点和终点"
+            }
+          ]
+        },
+        {
+          "type": "SeekBar",
+          "key": "radius",
+          "format": "圆半径%d",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 5,
+          "min": 1,
+          "max": 100
+        },
+        {
+          "type": "SeekBar",
+          "key": "height",
+          "format": "圆高度%d",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 10,
+          "min": 1,
+          "max": 100
+        },
+        {
+          "type": "CheckBox",
+          "key": "solid",
+          "name": "圆实心",
+          "color": "$TextColor",
+          "size": 8,
+          "tip": "设置圆是否为实心体"
+        },
+        {
+          "type": "SeekBar",
+          "key": "distance",
+          "format": "操作距离%.2f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 6.5,
+          "min": 1.0,
+          "max": 12.0
+        },
+        {
+          "type": "CheckBox",
+          "key": "retry",
+          "name": "失败重试",
+          "color": "$TextColor",
+          "size": 8,
+          "checked": true,
+          "tip": "当放置/破坏时操作失败会尝试重新放置/破坏"
+        },
+        {
+          "type": "CheckBox",
+          "key": "line_box",
+          "name": "边界线盒",
+          "color": "$TextColor",
+          "size": 8,
+          "checked": true,
+          "tip": "在操作的区域边界线盒"
+        },
+        {
+          "type": "CheckBox",
+          "key": "pick",
+          "name": "方块/生物选择",
+          "color": "$TextColor",
+          "size": 8,
+          "tip": "点击方块/生物会获取对应的物品和刷怪蛋（必须先为创造模式）"
+        }
+      ]
+    },
+    {
+      "type": "Switch",
+      "name": "自动钓鱼",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_AutoFish.png",
+        "on":"open/NeuronOn_AutoFish.png",
+        "icon":"open/NeuronOn_AutoFish.png"
+      },
+      "tag": "fun_auto_fishing",
+      "items": [
+        {
+          "type": "SeekBar",
+          "key": "delay",
+          "format": "抛竿延迟%d",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 3,
+          "min": 1,
+          "max": 20
+        }
+      ]
+    },
+    {
+      "type": "Switch",
+      "name": "背包移动",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_InventoryMove.png",
+        "on":"open/NeuronOn_InventoryMove.png",
+        "icon":"open/NeuronOn_InventoryMove.png"
+      },
+      "tag": "fun_inventory_move",
+      "items": [
+        {
+          "type": "CheckBox",
+          "key": "swap",
+          "name": "交换模式",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "TextView",
+          "name": "合成栏左上格",
+          "color": "$TextColor",
+          "size": 12,
+          "padding": [
+            10,
+            5,
+            10,
+            5
+          ],
+          "key": "crafting_left_top"
+        },
+        {
+          "type": "TextView",
+          "name": "合成栏右上格",
+          "color": "$TextColor",
+          "size": 12,
+          "padding": [
+            10,
+            5,
+            10,
+            5
+          ],
+          "key": "crafting_right_top"
+        },
+        {
+          "type": "TextView",
+          "name": "合成栏左下格",
+          "color": "$TextColor",
+          "size": 12,
+          "padding": [
+            10,
+            5,
+            10,
+            5
+          ],
+          "key": "crafting_left_bottom"
+        },
+        {
+          "type": "TextView",
+          "name": "合成栏右下格",
+          "color": "$TextColor",
+          "size": 12,
+          "padding": [
+            10,
+            5,
+            10,
+            5
+          ],
+          "key": "crafting_right_bottom"
+        },
+        {
+          "type": "TextView",
+          "name": "光标格",
+          "color": "$TextColor",
+          "size": 12,
+          "padding": [
+            10,
+            5,
+            10,
+            5
+          ],
+          "key": "cursor"
+        }
+      ]
+    },
+    {
+      "type": "Switch",
+      "name": "音频控制",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_SoundEngine.png",
+        "on":"open/NeuronOn_SoundEngine.png",
+        "icon":"open/NeuronOn_SoundEngine.png"
+      },
+      "tag": "fun_sound_engine",
+      "on": "只支持原版特性的服务器上使用",
+      "items": [
+        {
+          "type": "TextView",
+          "key": "edit_id",
+          "name": "编辑音频ID",
+          "color": "$TextColor",
+          "size": 12,
+          "padding": [
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "type": "Switch",
+          "key": "random",
+          "name": "随机ID",
+          "color": "$TextColor",
+          "size": 12
+        },
+        {
+          "type": "Switch",
+          "key": "record",
+          "name": "录制音频",
+          "color": "$TextColor",
+          "size": 12,
+          "on": "录制来自服务器的音效。录制时请勿打开播放"
+        },
+        {
+          "type": "Switch",
+          "key": "play_record",
+          "name": "播放录制",
+          "color": "$TextColor",
+          "size": 12,
+          "on": "播放录制的音频。播放时请勿打开录制"
+        },
+        {
+          "type": "RadioGroup",
+          "key": "mode",
+          "name": "播放对象",
+          "color": "$TextColor",
+          "size": 8,
+          "items": [
+            {
+              "key": "local",
+              "name": "自身位置",
+              "color": "$TextColor",
+              "size": 8,
+              "checked": true
+            },
+            {
+              "key": "player",
+              "name": "所有玩家",
+              "color": "$TextColor",
+              "size": 8
+            },
+            {
+              "key": "entity",
+              "name": "所有实体",
+              "color": "$TextColor",
+              "size": 8
+            }
+          ]
+        },
+        {
+          "type": "TextView",
+          "key": "save",
+          "name": "保存音频数据",
+          "color": "$TextColor",
+          "size": 12,
+          "padding": [
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "type": "TextView",
+          "key": "load",
+          "name": "加载音频数据",
+          "color": "$TextColor",
+          "size": 12,
+          "padding": [
+            5,
+            5,
+            5,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "type": "TextView",
+      "name": "建筑工具",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        10,
+        5,
+        10,
+        5
+      ],
+      "shortcut": {
+        "type": "ClickButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "icon":"other/Neuron_BuildTool.png"
+      },
+      "tag": "script_build_tool"
+    },
+    {
+      "type": "Switch",
+      "name": "启用新触控",
+      "color": "$TextColor",
+      "size": 10,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_NewTouchCtrl.png",
+        "on":"open/NeuronOn_NewTouchCtrl.png",
+        "icon":"open/NeuronOn_NewTouchCtrl.png"
+      },
+      "tag": "script_new_touch_control",
+      "items": [
+        {
+          "type": "RadioGroup",
+          "key": "mode",
+          "name": "控制模式",
+          "color": "$TextColor",
+          "size": 8,
+          "items": [
+            {
+              "key": "touch",
+              "name": "摇杆点击进行互动",
+              "color": "$TextColor",
+              "size": 8
+            },
+            {
+              "key": "crosshair",
+              "name": "方向键并点击进行互动",
+              "color": "$TextColor",
+              "size": 8
+            },
+            {
+              "key": "classic",
+              "name": "摇杆并瞄准十字线",
+              "color": "$TextColor",
+              "size": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "TextView",
+      "name": "进入本地游戏",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        10,
+        5,
+        10,
+        5
+      ],
+      "shortcut": {
+        "type": "ClickButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "icon":"other/Neuron_LocalGame.png"
+      },
+      "tag": "fun_local_game"
+    },
+    {
+      "type": "TextView",
+      "name": "创建本地世界",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        10,
+        5,
+        10,
+        5
+      ],
+      "shortcut": {
+        "type": "ClickButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "icon":"other/Neuron_CreateWorld.png"
+      },
+      "tag": "fun_create_world"
+    }
+  ]
+}
