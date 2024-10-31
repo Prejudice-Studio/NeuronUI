@@ -311,3 +311,14 @@ Update contents:
       "text": "Set HUD"
 - Optimized packet ordering
 - Preemptively reserved Minecraft Bedrock Edition's upcoming exclusive enchantments in `conf_enchant.json` [Dense] [Pierce] [Wind Blast] **!!!!Use is prohibited**
+
+# 2024.10.31  Helloween
+- Optimized the font size of the UI
+- Add [AsakaMod](https://github.com/Prejudice-Studio/AsakaMod-36D-SoundEffect)
+- Add [NoveXare 5.2 Cracked Version](https://github.com/Justice-Cracker/NoveXare-Cracked)
+- Open Source to Github
+- Happy Halloween to you all
+
+——Fix——
+- Removed the problematic AsakaMod
+- Fixed the issue that Loophole could not be opened
