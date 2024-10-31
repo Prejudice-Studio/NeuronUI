@@ -1,0 +1,1418 @@
+{
+  "type": "Menu",
+  "title": {
+    "name": "『NX-Player』",
+    "size": 15,
+    "elevation": 4,
+    "background": "$TitleBG",
+    "padding": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "colors": [
+      "$TitleColor",
+      "$TitleColor"
+    ],
+    "margins": [0, 0, 0, 0]
+  },
+  "color": "$MenuColor",
+  "alpha": 0.85,
+  "can_close": true,
+  "hide": true,
+  "margins": [0, 0, 0, 0],
+  "image_scaled_size": 40,
+  "radius": 10,
+  "show_dividers": false,
+    "items": [
+        {
+            "type": "TextView",
+            "name": "NoveXare",
+            "color": "$TextColor",
+            "size": 14,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_inventory_move",
+            "items": [
+                {
+                    "type": "Switch",
+                    "key": "FakeWater",
+                    "name": "假水",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12
+                },
+                {
+                    "type": "Switch",
+                    "key": "Suspend",
+                    "name": "悬浮",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12
+                },
+                {
+                    "type": "Switch",
+                    "key": "ClickBlock",
+                    "name": "替换方块",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12
+                },
+                {
+                    "type": "Switch",
+                    "key": "FakeBuilder",
+                    "name": "放置假方块",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12
+                },
+                {
+                    "type": "Switch",
+                    "key": "AutoArmor",
+                    "name": "自动穿装",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12
+                },
+                {
+                    "type": "Switch",
+                    "key": "AutoSelect",
+                    "name": "自动选物",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12
+                },
+                {
+                    "type": "Switch",
+                    "key": "BlockIn",
+                    "name": "双击BlockIn",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12
+                },
+                {
+                    "type": "Switch",
+                    "key": "ChargeAura",
+                    "name": "自动充能",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12
+                },
+                {
+                    "type": "Switch",
+                    "key": "ChestAura",
+                    "name": "自动开箱",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "delete_chest",
+                    "name": "清除已打开箱子",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "ChestAura_length",
+                    "format": "范围: %d",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 3,
+                    "min": 1,
+                    "max": 10
+                },
+                {
+                    "type": "Switch",
+                    "key": "SmartInv",
+                    "name": "智能背包",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "da_bow",
+                    "name": "仅低头",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "da_change",
+                    "name": "仅物品变化时",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "da_chest",
+                    "name": "仅开箱",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "da_move",
+                    "name": "移动物品",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "AutoPot",
+                    "name": "自动移动药水",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "ap_autobag",
+                    "name": "自动开关背包",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "Tower",
+                    "name": "自动上搭",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "tower_continuously",
+                    "name": "连续跳跃",
+                    "color": "$TextColor",
+                    "checked": true,
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "tower_delay",
+                    "format": "放置延迟: %d/tick",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 10,
+                    "min": 0,
+                    "max": 40
+                },
+                {
+                    "type": "TextView",
+                    "key": "InfiniteBreak",
+                    "name": "百米拆床",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "getBed",
+                    "name": "获取床坐标",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "Scaffold",
+                    "name": "自动搭路",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "shortcut": {
+                        "type": "CheckedButton",
+                        "params": [
+                            48,
+                            25
+                        ],
+                        "no_circle": true,
+                        "off": "NoveXare/Scaffold_off.png",
+                        "on": "NoveXare/Scaffold_on.png",
+                        "icon": "NoveXare/Scaffold_on.png"
+                    }
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "Scaffold_length",
+                    "format": "长度: %d",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 10
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "Scaffold_height",
+                    "format": "高度偏移: %.2f",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 5.00,
+                    "min": 0.00,
+                    "max": 10.00
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "Scaffold_any",
+                    "name": "任意物品搭路",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "keep_y",
+                    "name": "保持Y轴",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "Scaffold_person",
+                    "name": "自动视角",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "Scaffold_self",
+                    "name": "自己可见",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "Scaffold_other",
+                    "name": "他人可见",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "Scaffold_bjd",
+                    "name": "布吉岛反假方块",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "Scaffold_move",
+                    "name": "根据移动方向",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "Scaffold_up",
+                    "name": "头顶建造",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "Scaffold_hyt",
+                    "name": "假方块模式",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "Scaffold_findPath",
+                    "name": "自动寻找路径",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "Scaffold_mode",
+                    "name": "避免凭空放置",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "Scaffold_auto_block",
+                    "name": "自动选择方块",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "Scaffold_pitch",
+                    "name": "包括仰俯角",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "AutoGG",
+                    "name": "自动下一局",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "gg_mode",
+                    "name": "重开模式",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "Drop",
+                            "name": "丢弃",
+                            "color": "$TextColor",
+                            "size": 10,
+                            "checked": true
+                        },
+                        {
+                            "key": "Use",
+                            "name": "使用",
+                            "color": "$TextColor",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "ChestSteal",
+                    "name": "箱子小偷",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "steal_delay",
+                    "format": "关闭延迟: %.2fs",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0.50,
+                    "min": 0.00,
+                    "max": 5.00
+                },
+                {
+                    "type": "Switch",
+                    "key": "AutoBuy",
+                    "name": "自动买物品",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "AutoBuy_sword",
+                    "name": "剑",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "AutoBuy_armor",
+                    "name": "装备",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "AutoBuy_enchant",
+                    "name": "附魔",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "AutoBuy_apple",
+                    "name": "金苹果",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "AutoBuy_block",
+                    "name": "方块",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "AutoBuy_apple_count",
+                    "format": "金苹果数量: %d个",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 3,
+                    "min": 1,
+                    "max": 12
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "AutoBuy_block_count",
+                    "format": "方块数量: %d组",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 3,
+                    "min": 1,
+                    "max": 12
+                },
+                {
+                    "type": "Switch",
+                    "key": "Cleaner",
+                    "name": "背包整理",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "shortcut": {
+                        "type": "CheckedButton",
+                        "params": [
+                            48,
+                            25
+                        ],
+                        "no_circle": true,
+                        "off": "NoveXare/cleaner_off.png",
+                        "on": "NoveXare/cleaner_on.png",
+                        "icon": "NoveXare/cleaner_on.png"
+                    }
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "cleaner_bow",
+                    "name": "仅低头",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "cleaner_change",
+                    "name": "仅物品变化时",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "cleaner_chest",
+                    "name": "仅开箱",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "cleaner_move",
+                    "name": "移动物品",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "add_item",
+                    "name": "添加物品",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "cleaner_mode",
+                    "name": "整理模式",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "drop",
+                            "name": "丢弃",
+                            "color": "$TextColor",
+                            "size": 10,
+                            "checked": true
+                        },
+                        {
+                            "key": "save",
+                            "name": "保留",
+                            "color": "$TextColor",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "drop_delay",
+                    "format": "丢弃延迟: %d",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0,
+                    "min": 0,
+                    "max": 20
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "max_drop_item",
+                    "format": "最大同时丢弃数量: %d",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 36,
+                    "min": 1,
+                    "max": 36
+                },
+                {
+                    "type": "Switch",
+                    "key": "AutoDo",
+                    "name": "低血量操作",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "min_run_heal",
+                    "format": "最低血量: %d",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 10,
+                    "min": 0,
+                    "max": 40
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "low_health_operate_sword",
+                    "name": "使用完自动切剑",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "low_health_operate_mode",
+                    "name": "操作模式",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "Hub",
+                            "name": "退出",
+                            "color": "$TextColor",
+                            "size": 10,
+                            "checked": true
+                        },
+                        {
+                            "key": "Again",
+                            "name": "重开",
+                            "color": "$TextColor",
+                            "size": 10
+                        },
+                        {
+                            "key": "Flashback",
+                            "name": "闪退",
+                            "color": "$TextColor",
+                            "size": 10
+                        },
+                        {
+                            "key": "Pot",
+                            "name": "喷药",
+                            "color": "$TextColor",
+                            "size": 10
+                        },
+                        {
+                            "key": "Soup",
+                            "name": "喝汤",
+                            "color": "$TextColor",
+                            "size": 10
+                        },
+                        {
+                            "key": "Helmet",
+                            "name": "金头盔",
+                            "color": "$TextColor",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "HotbarSelector",
+                    "name": "遍历快捷栏",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "select_hotbar_items",
+                    "name": "指定选择物品",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "select_hotbar_slots",
+                    "name": "指定选择格子",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "select_delay",
+                    "format": "选择延迟: %d",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0,
+                    "min": 0,
+                    "max": 40
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "select_use",
+                    "name": "自动使用",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "AutoSave",
+                    "name": "自动自救",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "autosave_autoselect",
+                    "name": "自动选择方块",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "autosave_fake_block",
+                    "name": "假方块模式",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "autosave_air",
+                    "name": "卡空模式",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "autosave_near_block",
+                    "name": "最近方块模式",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "max_mot_y",
+                    "format": "最大移动值: -%.2f",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0.42,
+                    "min": 0.01,
+                    "max": 1.00
+                },
+                {
+                    "type": "Switch",
+                    "key": "ClickDestroy",
+                    "name": "点击破坏",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "AutoDestroy",
+                    "name": "自动破坏",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "excludeFeet",
+                    "name": "排除脚下方块",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "replace_block",
+                    "name": "假方块模式",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "destroy_packet",
+                    "name": "发包模式",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "destroy_size",
+                    "format": "大小: %d",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 9
+                },
+                {
+                    "type": "Switch",
+                    "key": "CPvP",
+                    "name": "粽子",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "cpvp_mode",
+                    "name": "操作",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "Destroy",
+                            "name": "破坏",
+                            "color": "$TextColor",
+                            "size": 10,
+                            "checked": true
+                        },
+                        {
+                            "key": "Build",
+                            "name": "填充",
+                            "color": "$TextColor",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "AutoCrystal",
+                    "name": "水晶光环",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "crystal_delay",
+                    "format": "延迟: %d",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 0,
+                    "max": 40
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "crystal_acount",
+                    "format": "放置数量: %d",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 9
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "SelectCrystal",
+                    "name": "自动选择",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "CrystalTP",
+                    "name": "传送",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "AutoBomb",
+                    "name": "自动重生锚",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "bomb_delay",
+                    "format": "延迟: %d",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 0,
+                    "max": 40
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "SelectBomb",
+                    "name": "自动选择",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "NoFall",
+                    "name": "无掉落伤害",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "nofall_mode",
+                    "name": "无伤模式",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "Motion",
+                            "name": "移动值",
+                            "color": "$TextColor",
+                            "size": 10,
+                            "checked": true
+                        },
+                        {
+                            "key": "Blink",
+                            "name": "停止发包",
+                            "color": "$TextColor",
+                            "size": 10
+                        },
+                        {
+                            "key": "Timer",
+                            "name": "变速",
+                            "color": "$TextColor",
+                            "size": 10
+                        },
+                        {
+                            "key": "Packet",
+                            "name": "发包",
+                            "color": "$TextColor",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "FastBuild",
+                    "name": "快速搭路",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "build_distance",
+                    "format": "建造长度: %d",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 4,
+                    "min": 1,
+                    "max": 20
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "build_tick",
+                    "format": "建造延迟: %dTick",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 10,
+                    "min": 1,
+                    "max": 40
+                }
+            ]
+        }
+    ]
+}

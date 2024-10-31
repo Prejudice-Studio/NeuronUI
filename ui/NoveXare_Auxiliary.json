@@ -1,0 +1,1742 @@
+{
+  "type": "Menu",
+  "title": {
+    "name": "『NX-Auxiliary』",
+    "size": 15,
+    "elevation": 4,
+    "background": "$TitleBG",
+    "padding": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "colors": [
+      "$TitleColor",
+      "$TitleColor"
+    ],
+    "margins": [0, 0, 0, 0]
+  },
+  "color": "$MenuColor",
+  "alpha": 0.85,
+  "can_close": true,
+  "hide": true,
+  "margins": [0, 0, 0, 0],
+  "image_scaled_size": 40,
+  "radius": 10,
+  "show_dividers": false,
+    "items": [
+        {
+            "type": "TextView",
+            "name": "NoveXare",
+            "color": "$TextColor",
+            "size": 14,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_inventory_move",
+            "items": [
+                {
+                    "type": "Switch",
+                    "key": "GodMode",
+                    "name": "上帝模式",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "GodMode_mode",
+                    "name": "GM模式",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "Motion",
+                            "name": "移动值",
+                            "color": "$TextColor",
+                            "size": 10,
+                            "checked": true
+                        },
+                        {
+                            "key": "Pos",
+                            "name": "坐标",
+                            "color": "$TextColor",
+                            "size": 10
+                        },
+                        {
+                            "key": "Packet",
+                            "name": "发包",
+                            "color": "$TextColor",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "tp_back",
+                    "name": "传送回来",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "gm_xz",
+                    "name": "包括水平",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "gm_local",
+                    "name": "传送原地",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "gm_move",
+                    "name": "仅移动",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "gm_ground",
+                    "name": "仅在地面",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "gm_edit_y",
+                    "name": "修改Y轴",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "checked": true,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "gm_cycle",
+                    "format": "周期: %dTick",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 0,
+                    "max": 40
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "gm_delay",
+                    "format": "返回延迟: %dTick",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0,
+                    "min": 0,
+                    "max": 40
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "gm_count",
+                    "format": "传送次数: %d次",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 5,
+                    "min": 1,
+                    "max": 10
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "gm_y",
+                    "format": "自定义Y: 1e%d\n0为不修改",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0,
+                    "min": 0,
+                    "max": 10
+                },
+                {
+                    "type": "Switch",
+                    "key": "NoHunger",
+                    "name": "无饥饿",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12
+                },
+                {
+                    "type": "Switch",
+                    "key": "InfinityExp",
+                    "name": "无限经验",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12
+                },
+                {
+                    "type": "Switch",
+                    "key": "BypassMute",
+                    "name": "绕过禁言",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12
+                },
+                {
+                    "type": "Switch",
+                    "key": "GetCommand",
+                    "name": "获取命令方块内容",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12
+                },
+                {
+                    "type": "Switch",
+                    "key": "BypassServer",
+                    "name": "租赁服绕过移动",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "EatInstantly",
+                    "name": "布吉岛秒吃",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "NoDebuff",
+                    "name": "无坏效果",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "FakeMove",
+                    "name": "伪装移动",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "NightVision",
+                    "name": "夜视",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "RemoveItem",
+                    "name": "移除掉落物",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "RemoveNotPlayer",
+                    "name": "移除非玩家",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "RemovePlayer",
+                    "name": "移除玩家",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "LocalRespawn",
+                    "name": "原地复活",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "ClickGround",
+                    "name": "自动点地",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "ResShop",
+                    "name": "资源商店",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "TimePause",
+                    "name": "时间暂停",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "RandomAccount",
+                    "name": "随机上号",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "DumpList",
+                    "name": "导出玩家/目标/实体列表",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "OpenChest",
+                    "name": "隔空开箱",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "EditY",
+                    "name": "修改Y轴",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "Edit_Y",
+                    "format": "Y轴高度 %d",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 85,
+                    "min": 0,
+                    "max": 128
+                },
+                {
+                    "type": "Switch",
+                    "key": "BlockClicker",
+                    "name": "方块连点",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "block_ac_select",
+                    "name": "选择坐标模式",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "delete_ac",
+                    "name": "清除坐标",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "Miner",
+                    "name": "连锁采集",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "mine_distance",
+                    "format": "采集范围: %d格",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 5,
+                    "min": 1,
+                    "max": 30
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "mine_num",
+                    "format": "采集数量: %d个",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 20,
+                    "min": 1,
+                    "max": 256
+                },
+                {
+                    "type": "Switch",
+                    "key": "BalanceTimer",
+                    "name": "平衡变速",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "shortcut": {
+                        "type": "CheckedButton",
+                        "params": [
+                            48,
+                            25
+                        ],
+                        "no_circle": true,
+                        "off": "NoveXare/timer_off.png",
+                        "on": "NoveXare/timer_on.png",
+                        "icon": "NoveXare/timer_on.png"
+                    }
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "bt_lock",
+                    "name": "固定移动",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "ChatSuffix",
+                    "name": "聊天后缀",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "edit_suffix",
+                    "name": "编辑后缀",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "AntiStaff",
+                    "name": "反协管",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "AntiStaff_mode",
+                    "name": "判断模式",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "HYT",
+                            "name": "花雨庭",
+                            "color": "$TextColor",
+                            "size": 10,
+                            "checked": true
+                        },
+                        {
+                            "key": "EC",
+                            "name": "EaseCation",
+                            "color": "$TextColor",
+                            "size": 10
+                        },
+                        {
+                            "key": "config",
+                            "name": "自定义配置",
+                            "color": "$TextColor",
+                            "size": 10
+                        },
+                        {
+                            "key": "None",
+                            "name": "空",
+                            "color": "$TextColor",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "AntiStaff_ground",
+                    "name": "判断是否在地面",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "AntiStaff_Invisible",
+                    "name": "判断隐身",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "anti_mode",
+                    "name": "操作模式",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "Tip",
+                            "name": "提示",
+                            "color": "$TextColor",
+                            "size": 10,
+                            "checked": true
+                        },
+                        {
+                            "key": "Hub",
+                            "name": "退出",
+                            "color": "$TextColor",
+                            "size": 10
+                        },
+                        {
+                            "key": "Again",
+                            "name": "重开",
+                            "color": "$TextColor",
+                            "size": 10
+                        },
+                        {
+                            "key": "ActionBar",
+                            "name": "活跃栏",
+                            "color": "$TextColor",
+                            "size": 10
+                        },
+                        {
+                            "key": "Crasher",
+                            "name": "崩溃协管",
+                            "color": "$TextColor",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "RightClicker",
+                    "name": "自动右键",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "shortcut": {
+                        "type": "CheckedButton",
+                        "params": [
+                            48,
+                            25
+                        ],
+                        "no_circle": true,
+                        "off": "NoveXare/use_off.png",
+                        "on": "NoveXare/use_on.png",
+                        "icon": "NoveXare/use_on.png"
+                    }
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "use_times",
+                    "format": "使用倍数: %d倍",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 20
+                },
+                {
+                    "type": "Switch",
+                    "key": "CheckAxe",
+                    "name": "秒人斧检测",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "AntiTouch",
+                    "name": "防误触箱子",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "AvoidAttack",
+                    "name": "次元空间",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "DropRes",
+                    "name": "下落丢资源",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "drop_motion",
+                    "format": "下落移动值: %.2f",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1.30,
+                    "min": 0.00,
+                    "max": 3.00
+                },
+                {
+                    "type": "Switch",
+                    "key": "Breaker",
+                    "name": "持剑破坏",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "autobreak",
+                    "name": "自动模式",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "breaker_auto",
+                    "name": "自动工具",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "destroy_up",
+                    "name": "破坏上方方块",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "destroy_authinput",
+                    "name": "玩家授权认证数据包",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "destroy_playeraction",
+                    "name": "玩家行为数据包",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "break_bed",
+                    "name": "床",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "checked": true,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "break_chest",
+                    "name": "箱子",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "checked": true,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "breaker_range",
+                    "format": "破坏范围: %d格",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 5,
+                    "min": 1,
+                    "max": 10
+                },
+                {
+                    "type": "Switch",
+                    "key": "FakeLag",
+                    "name": "伪延迟",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "fakelag_status",
+                    "name": "显示状态",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "reverse_lag",
+                    "name": "反向延迟",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "lag_tick",
+                    "format": "延迟: %dTick",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 2,
+                    "min": 1,
+                    "max": 60
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "lag_last_tick",
+                    "format": "延迟持续时间: %dTick",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 60
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "FakeLag_mode",
+                    "name": "延迟模式",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "All",
+                            "name": "全部",
+                            "color": "$TextColor",
+                            "size": 10,
+                            "checked": true
+                        },
+                        {
+                            "key": "Move",
+                            "name": "移动",
+                            "color": "$TextColor",
+                            "size": 10
+                        },
+                        {
+                            "key": "receiveMove",
+                            "name": "接受移动",
+                            "color": "$TextColor",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "Spammer",
+                    "name": "自动发言",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "Spammer_word",
+                    "name": "使用词库",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "content",
+                    "name": "编辑内容",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "Spammer_random",
+                    "name": "随机字符串",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "Spammer_delay",
+                    "format": "延迟: %ds",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 0,
+                    "max": 60
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "Spammer_num",
+                    "format": "次数: %d条",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 20
+                },
+                {
+                    "type": "Switch",
+                    "key": "KickAura",
+                    "name": "崩溃光环",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "edit_KickAura",
+                    "name": "编辑卡人文本",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "KickAura_repeat",
+                    "format": "文本复制: %d次",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 50,
+                    "min": 1,
+                    "max": 300
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "KickAura_for",
+                    "format": "遍历次数: %d次",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 50,
+                    "min": 1,
+                    "max": 200
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "KickAura_multi",
+                    "name": "启用重复发包",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "checked": true,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "KickAura_times",
+                    "format": "发包倍数: %d次",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 500,
+                    "min": 1,
+                    "max": 2000
+                },
+                {
+                    "type": "Switch",
+                    "key": "Crasher",
+                    "name": "崩溃器",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "Crasher_mode",
+                    "name": "崩溃模式",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "Server",
+                            "name": "重复PyRpc",
+                            "color": "$TextColor",
+                            "size": 10,
+                            "checked": true
+                        },
+                        {
+                            "key": "Error-Build",
+                            "name": "建造方块",
+                            "color": "$TextColor",
+                            "size": 10
+                        },
+                        {
+                            "key": "ManyAction-1",
+                            "name": "大量行为包",
+                            "color": "$TextColor",
+                            "size": 10
+                        },
+                        {
+                            "key": "CustomPyRpc",
+                            "name": "自定义PyRpc",
+                            "color": "$TextColor",
+                            "size": 10
+                        },
+                        {
+                            "key": "ManyText",
+                            "name": "发送聊天",
+                            "color": "$TextColor",
+                            "size": 10
+                        },
+                        {
+                            "key": "MultiTell",
+                            "name": "大量Tell",
+                            "color": "$TextColor",
+                            "size": 10
+                        },
+                        {
+                            "key": "ErrorRot",
+                            "name": "非法视角值",
+                            "color": "$TextColor",
+                            "size": 10
+                        },
+                        {
+                            "key": "EncryptChat",
+                            "name": "跑路加密聊天",
+                            "color": "$TextColor",
+                            "size": 10
+                        },
+                        {
+                            "key": "Sound",
+                            "name": "音频",
+                            "color": "$TextColor",
+                            "size": 10
+                        },
+                        {
+                            "key": "AttAck",
+                            "name": "攻击",
+                            "color": "$TextColor",
+                            "size": 10
+                        },
+                        {
+                            "key": "MovePacket",
+                            "name": "移动包",
+                            "color": "$TextColor",
+                            "size": 10
+                        },
+                        {
+                            "key": "PlayerAuthInput",
+                            "name": "玩家授权认证",
+                            "color": "$TextColor",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "Crasher_for",
+                    "format": "遍历次数: %d次",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 50,
+                    "min": 1,
+                    "max": 500
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "Crasher_multi",
+                    "name": "启用重复发包",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "checked": true,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "Crasher_times",
+                    "format": "发包倍数: %d次",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 500,
+                    "min": 1,
+                    "max": 2000
+                },
+                {
+                    "type": "Switch",
+                    "key": "RecordInfo",
+                    "name": "目标信息记录",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "click_mode",
+                    "name": "点击模式",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "save_to_file",
+                    "name": "保存为文件",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "SoundPlayer",
+                    "name": "8D音效",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "SoundPlayer_add",
+                    "name": "类型ID + 1",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "surround_all",
+                    "name": "全部玩家",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "checked": true,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "surround_all_entity",
+                    "name": "全部实体",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "surround_exclude_self",
+                    "name": "排除自己",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "surround_loop",
+                    "name": "循环播放",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "SoundPlayer_type",
+                    "name": "编辑音效类型",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "SoundPlayer_level",
+                    "name": "编辑音效音调",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "addPlayPos",
+                    "name": "添加播放坐标",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "delete_PlayPos",
+                    "name": "清空播放坐标",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "load_sound",
+                    "name": "加载音频文件",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "select_sound",
+                    "name": "选择音频文件",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "SoundPlayer_distance",
+                    "format": "环绕距离:%d",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 10
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "SoundPlayer_num",
+                    "format": "播放次数:%d",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 500
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "SoundPlayer_vec",
+                    "format": "播放倍速:%d",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 10
+                }
+            ]
+        }
+    ]
+}

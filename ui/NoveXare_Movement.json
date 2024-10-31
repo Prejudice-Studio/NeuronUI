@@ -1,0 +1,1304 @@
+{
+  "type": "Menu",
+  "title": {
+    "name": "『NX-Movement』",
+    "size": 15,
+    "elevation": 4,
+    "background": "$TitleBG",
+    "padding": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "colors": [
+      "$TitleColor",
+      "$TitleColor"
+    ],
+    "margins": [0, 0, 0, 0]
+  },
+  "color": "$MenuColor",
+  "alpha": 0.85,
+  "can_close": true,
+  "hide": true,
+  "margins": [0, 0, 0, 0],
+  "image_scaled_size": 40,
+  "radius": 10,
+  "show_dividers": false,
+    "items": [
+        {
+            "type": "TextView",
+            "name": "NoveXare",
+            "color": "$TextColor",
+            "size": 14,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_inventory_move",
+            "items": [
+                {
+                    "type": "TextView",
+                    "key": "LookTP",
+                    "name": "传送目之所及",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "LookTP_mode",
+                    "name": "传送模式",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "Motion",
+                            "name": "移动值",
+                            "color": "$TextColor",
+                            "size": 10,
+                            "checked": true
+                        },
+                        {
+                            "key": "Pos",
+                            "name": "坐标",
+                            "color": "$TextColor",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "UpJump",
+                    "name": "上升",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "DownJump",
+                    "name": "下降",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "up_down_speed",
+                    "format": "上下高度: %.2f",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "value": 1.00,
+                    "min": 0.01,
+                    "max": 5.00
+                },
+                {
+                    "type": "TextView",
+                    "key": "Rusher",
+                    "name": "冲刺",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "rush_length",
+                    "format": "冲刺远度:%d",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "value": 5,
+                    "min": 1,
+                    "max": 20
+                },
+                {
+                    "type": "TextView",
+                    "key": "TPDown",
+                    "name": "向下传送",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "NoWall",
+                    "name": "穿墙",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "Hover",
+                    "name": "鞘翅悬停",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "FakeSprint",
+                    "name": "伪装疾跑",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "HurtJump",
+                    "name": "受击跳跃",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "FastStop",
+                    "name": "快速停止",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "MoveJump",
+                    "name": "移动跳跃",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "ClickTP",
+                    "name": "点击传送",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "SafeWalk",
+                    "name": "安全行走",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "Jesus",
+                    "name": "水上漂",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "NoLiquid",
+                    "name": "无视液体减速",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "BetterJump",
+                    "name": "更好的跳跃",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "NoClip",
+                    "name": "穿透飞行",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "enable_bypass",
+                    "name": "启用分离视角",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "enable_disabler",
+                    "name": "绕过租赁服移动",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "Velocity",
+                    "name": "速度",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "shortcut": {
+                        "type": "CheckedButton",
+                        "params": [
+                            48,
+                            25
+                        ],
+                        "no_circle": true,
+                        "off": "NoveXare/speed_off.png",
+                        "on": "NoveXare/speed_on.png",
+                        "icon": "NoveXare/speed_on.png"
+                    }
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "Bhop",
+                    "name": "BunnyHop",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "bhop_airjump",
+                    "name": "AirHop",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "bhop_mode",
+                    "name": "Bhop模式",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "sSingle",
+                            "name": "单向",
+                            "color": "$TextColor",
+                            "size": 10,
+                            "checked": true
+                        },
+                        {
+                            "key": "Multiple",
+                            "name": "多向",
+                            "color": "$TextColor",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "bhop_heigh",
+                    "format": "Bhop高度: %.2f",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0.40,
+                    "min": 0.00,
+                    "max": 1.00
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "bhop_speed",
+                    "format": "速度 %d",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 5,
+                    "min": 1,
+                    "max": 30
+                },
+                {
+                    "type": "Switch",
+                    "key": "Fly",
+                    "name": "飞行",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "shortcut": {
+                        "type": "CheckedButton",
+                        "params": [
+                            48,
+                            25
+                        ],
+                        "no_circle": true,
+                        "off": "NoveXare/fly_off.png",
+                        "on": "NoveXare/fly_on.png",
+                        "icon": "NoveXare/fly_on.png"
+                    }
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "fly_up_down",
+                    "name": "蛇形飞行",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "fly_run",
+                    "name": "疾跑飞行",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "fly_mot",
+                    "name": "移动值归零",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "checked": true,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "fly_only_fly",
+                    "name": "移动飞行",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "fly_block",
+                    "name": "判断方块",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "fly_includeY",
+                    "name": "仅Y轴",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "fly_packet",
+                    "name": "发包",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "fly_mode",
+                    "name": "移动模式",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "Pos",
+                            "name": "坐标",
+                            "color": "$TextColor",
+                            "size": 10,
+                            "checked": true
+                        },
+                        {
+                            "key": "Motion",
+                            "name": "移动值",
+                            "color": "$TextColor",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "fly_speed",
+                    "format": "速度: %d",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 20,
+                    "min": 1,
+                    "max": 60
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "fly_set_ud",
+                    "format": "上下高度: %d",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 10,
+                    "min": 0,
+                    "max": 30
+                },
+                {
+                    "type": "Switch",
+                    "key": "JetPack",
+                    "name": "喷气背包",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "shortcut": {
+                        "type": "CheckedButton",
+                        "params": [
+                            48,
+                            25
+                        ],
+                        "no_circle": true,
+                        "off": "NoveXare/sprint_off.png",
+                        "on": "NoveXare/sprint_on.png",
+                        "icon": "NoveXare/sprint_on.png"
+                    }
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "throw_wall",
+                    "name": "穿墙",
+                    "color": "$TextColor",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "move_fly",
+                    "name": "移动飞行",
+                    "color": "$TextColor",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "sprint_horizontal",
+                    "name": "水平移动",
+                    "color": "$TextColor",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "sprint_packet",
+                    "name": "发包",
+                    "color": "$TextColor",
+                    "size": 10
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "sprint_mode",
+                    "name": "移动模式",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "Pos",
+                            "name": "坐标",
+                            "color": "$TextColor",
+                            "size": 10,
+                            "checked": true
+                        },
+                        {
+                            "key": "Motion",
+                            "name": "移动值",
+                            "color": "$TextColor",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "sprint_speed",
+                    "format": "速度: %d",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "value": 12,
+                    "min": 1,
+                    "max": 60
+                },
+                {
+                    "type": "Switch",
+                    "key": "AntiVoid",
+                    "name": "虚空回弹",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "shortcut": {
+                        "type": "CheckedButton",
+                        "params": [
+                            48,
+                            25
+                        ],
+                        "no_circle": true,
+                        "off": "NoveXare/lagback_off.png",
+                        "on": "NoveXare/lagback_on.png",
+                        "icon": "NoveXare/lagback_on.png"
+                    }
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "lagback_derp",
+                    "name": "拉回旋转",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "lagback_y",
+                    "format": "最小移动值:%.2f",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0.80,
+                    "min": 0.10,
+                    "max": 3.00
+                },
+                {
+                    "type": "Switch",
+                    "key": "FreeCam",
+                    "name": "灵魂出窍",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "shortcut": {
+                        "type": "CheckedButton",
+                        "params": [
+                            48,
+                            25
+                        ],
+                        "no_circle": true,
+                        "off": "NoveXare/freecam_off.png",
+                        "on": "NoveXare/freecam_on.png",
+                        "icon": "NoveXare/freecam_on.png"
+                    }
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "freecam_mode",
+                    "name": "灵魂出窍模式",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "All",
+                            "name": "全部",
+                            "color": "$TextColor",
+                            "size": 10,
+                            "checked": true
+                        },
+                        {
+                            "key": "Move",
+                            "name": "移动",
+                            "color": "$TextColor",
+                            "size": 10
+                        },
+                        {
+                            "key": "AntiCheat",
+                            "name": "网易反作弊",
+                            "color": "$TextColor",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "freecam_show",
+                    "name": "绘制本体",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "freecam_dis",
+                    "name": "显示本体距离",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "FlexibleMove",
+                    "name": "原子运动",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "flexibleMove_speed",
+                    "format": "速度:%d",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 5,
+                    "min": 1,
+                    "max": 30
+                },
+                {
+                    "type": "Switch",
+                    "key": "LongJump",
+                    "name": "长跳",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "longjump_x",
+                    "format": "远度:%d",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 5,
+                    "min": 1,
+                    "max": 20
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "longjump_y",
+                    "format": "高度:%.2f",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0.50,
+                    "min": 0.01,
+                    "max": 1.00
+                },
+                {
+                    "type": "Switch",
+                    "key": "auto_jump",
+                    "name": "自动跳跃",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "jump_strength",
+                    "format": "跳跃高度: %d",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 42,
+                    "min": 0,
+                    "max": 100
+                },
+                {
+                    "type": "Switch",
+                    "key": "SlowDown",
+                    "name": "缓降",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "slowdown_speed",
+                    "format": "下落速度: %d",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 5,
+                    "min": 1,
+                    "max": 20
+                },
+                {
+                    "type": "Switch",
+                    "key": "AirJump",
+                    "name": "自动踏空",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "jump_length",
+                    "format": "速度: %d",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 5,
+                    "min": 0,
+                    "max": 20
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "jump_heigh",
+                    "format": "高度: %d",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 42,
+                    "min": 0,
+                    "max": 60
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "on.mp3",
+            "off_sound": "off.mp3",
+            "name": "显示摇杆",
+            "color": "$TextColor",
+            "size": 12,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_ride_flying",
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "key": "Rocker",
+                    "name": "启用功能",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "targetStrafe",
+                    "name": "环绕攻击",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "targetStrafe_relative",
+                    "name": "相对移动",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "imitateMove",
+                    "name": "模拟正常移动",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "boostSpeed",
+                    "name": "移动加速",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "move_mode",
+                    "name": "移动速度",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "move",
+                            "name": "行走",
+                            "color": "$TextColor",
+                            "size": 10,
+                            "checked": true
+                        },
+                        {
+                            "key": "sprint",
+                            "name": "疾跑",
+                            "color": "$TextColor",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "rocker_bhop",
+                    "name": "BunnyHop",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "rocker_ahop",
+                    "name": "AirHop",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "rocker_mode",
+                    "name": "移动模式",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "Motion",
+                            "name": "移动值",
+                            "color": "$TextColor",
+                            "size": 10,
+                            "checked": true
+                        },
+                        {
+                            "key": "Pos",
+                            "name": "坐标",
+                            "color": "$TextColor",
+                            "size": 10
+                        },
+                        {
+                            "key": "Camera",
+                            "name": "摄像机",
+                            "color": "$TextColor",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "rocker_bhop_heigh",
+                    "format": "跳跃高度: %.2f",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0.42,
+                    "min": 0.00,
+                    "max": 1.00
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "rocker_speed",
+                    "format": "移动速度 %d",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 8,
+                    "min": 1,
+                    "max": 30
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "targetStrafe_distance",
+                    "format": "环绕距离 %.2f",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1.5,
+                    "min": 0.5,
+                    "max": 5.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "targetStrafe_range",
+                    "format": "摇杆范围 ±%d",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 180,
+                    "min": 0,
+                    "max": 180
+                }
+            ]
+        }
+    ]
+}

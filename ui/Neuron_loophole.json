@@ -1,0 +1,428 @@
+{
+        "type": "Menu",
+        "title": {
+                "name": "『Loophole』",
+                "size": 15,
+                "elevation": 4,
+                "background": "$TitleBG",
+                "padding": [
+                        4,
+                        4,
+                        4,
+                        4
+                ],
+                "colors": [
+                        "$TitleColor",
+                        "$TitleColor"
+                ],
+                "margins": [
+                        0,
+                        0,
+                        0,
+                        0
+                ]
+        },
+        "color": "$MenuColor",
+        "alpha": 0.85,
+        "can_close": true,
+        "hide": true,
+        "margins": [
+                0,
+                0,
+                0,
+                0
+        ],
+        "image_scaled_size": 40,
+        "radius": 10,
+        "show_dividers": false,
+        "items": [
+                {
+                        "type": "Switch",
+                        "name": "崩溃服务器",
+                        "color": "$textColor",
+                        "size": 12,
+                        "padding": [
+                                5,
+                                0,
+                                5,
+                                0
+                        ],
+                        "shortcut": {
+                                "type": "CheckedButton",
+                                "params": [
+                                        65,
+                                        65
+                                ],
+                                "no_circle": true,
+                                "off": "close/NeuronOff_Crasher.png",
+                                "on": "open/NeuronOn_Crasher.png",
+                                "icon": "open/NeuronOn_Crasher.png"
+                        },
+                        "tag": "fun_crash_server",
+                        "items": [
+                                {
+                                        "type": "CheckBox",
+                                        "key": "particle",
+                                        "name": "粒子爆炸",
+                                        "color": "$textColor",
+                                        "size": 12
+                                },
+                                {
+                                        "type": "CheckBox",
+                                        "key": "multipleRpc",
+                                        "name": "多发RPC",
+                                        "color": "$textColor",
+                                        "size": 12
+                                },
+                                {
+                                        "type": "CheckBox",
+                                        "key": "forwardRpc",
+                                        "name": "转发RPC",
+                                        "color": "$textColor",
+                                        "size": 12
+                                },
+                                {
+                                        "type": "CheckBox",
+                                        "key": "antiPacket",
+                                        "name": "反数据包攻击",
+                                        "color": "$textColor",
+                                        "size": 12
+                                },
+                                {
+                                        "type": "SeekBar",
+                                        "key": "count",
+                                        "format": "数据包%d个",
+                                        "color": "$textColor",
+                                        "size": 8,
+                                        "padding": [
+                                                0,
+                                                0,
+                                                0,
+                                                0
+                                        ],
+                                        "value": 10000,
+                                        "min": 1,
+                                        "max": 100000
+                                }
+                        ]
+                },
+                {
+                        "type": "TextView",
+                        "name": "NBT编辑器",
+                        "color": "$textColor",
+                        "size": 12,
+                        "padding": [
+                                8,
+                                8,
+                                8,
+                                8
+                        ],
+                        "shortcut": {
+                                "type": "ClickButton",
+                                "params": [
+                                        65,
+                                        65
+                                ],
+                                "no_circle": true,
+                                "icon": "other/Neuron_NBT.png"
+                        },
+                        "tag": "fun_nbt_editor"
+                },
+                {
+                        "type": "TextView",
+                        "name": "花雨庭商店",
+                        "color": "$textColor",
+                        "size": 12,
+                        "padding": [
+                                8,
+                                8,
+                                8,
+                                8
+                        ],
+                        "shortcut": {
+                                "type": "ClickButton",
+                                "params": [
+                                        65,
+                                        65
+                                ],
+                                "no_circle": true,
+                                "icon": "other/Neuron_Shop.png"
+                        },
+                        "tag": "fun_open_shop",
+                        "tip": "Only For HYT"
+                },
+                {
+                        "type": "TextView",
+                        "name": "BJD Shop(无效)",
+                        "color": "$textColor",
+                        "size": 12,
+                        "padding": [
+                                10,
+                                10,
+                                10,
+                                10
+                        ],
+                        "shortcut": {
+                                "type": "ClickButton",
+                                "params": [
+                                        65,
+                                        65
+                                ],
+                                "no_circle": true,
+                                "icon": "other/Neuron_BJDShop.png"
+                        },
+                        "key": "5",
+                        "tip": "Only For BJD"
+                },
+                {
+                        "type": "TextView",
+                        "name": "租赁服密码爆破",
+                        "color": "$textColor",
+                        "size": 12,
+                        "padding": [
+                                10,
+                                5,
+                                10,
+                                5
+                        ],
+                        "shortcut": {
+                                "type": "CheckedButton",
+                                "params": [
+                                        65,
+                                        65
+                                ],
+                                "no_circle": true,
+                                "icon": "other/Neuron_Password.png"
+                        },
+                        "tag": "fun_client_manager"
+                },
+                {
+                        "type": "TextView",
+                        "name": "IP外进",
+                        "color": "$textColor",
+                        "size": 12,
+                        "padding": [
+                                10,
+                                5,
+                                10,
+                                5
+                        ],
+                        "shortcut": {
+                                "type": "ClickButton",
+                                "params": [
+                                        65,
+                                        65
+                                ],
+                                "no_circle": true,
+                                "icon": "other/Neuron_JoinGame.png"
+                        },
+                        "tag": "fun_join_game"
+                },
+                {
+                        "type": "EditText",
+                        "name": "联机假名",
+                        "color": "$textColor",
+                        "size": 12,
+                        "padding": [
+                                10,
+                                5,
+                                10,
+                                5
+                        ],
+                        "max_lines": 1,
+                        "hint": "内容为空恢复默认",
+                        "tag": "fun_fake_name"
+                },
+                {
+                        "type": "Switch",
+                        "name": "自定义等级标识",
+                        "color": "$textColor",
+                        "size": 12,
+                        "padding": [
+                                5,
+                                5,
+                                5,
+                                5
+                        ],
+                        "tag": "fun_custom_growth_level",
+                        "items": [
+                                {
+                                        "type": "RadioGroup",
+                                        "key": "type",
+                                        "name": "标识",
+                                        "color": "$textColor",
+                                        "size": 8,
+                                        "items": [
+                                                {
+                                                        "key": "wood",
+                                                        "name": "橡木",
+                                                        "color": "$textColor",
+                                                        "size": 15
+                                                },
+                                                {
+                                                        "key": "albizia",
+                                                        "name": "合欢木",
+                                                        "color": "$textColor",
+                                                        "size": 15
+                                                },
+                                                {
+                                                        "key": "sand",
+                                                        "name": "沙块",
+                                                        "color": "$textColor",
+                                                        "size": 15
+                                                },
+                                                {
+                                                        "key": "stone",
+                                                        "name": "圆石",
+                                                        "color": "$textColor",
+                                                        "size": 15
+                                                },
+                                                {
+                                                        "key": "iron",
+                                                        "name": "精铁",
+                                                        "color": "$textColor",
+                                                        "size": 15
+                                                },
+                                                {
+                                                        "key": "emerald",
+                                                        "name": "绿宝石",
+                                                        "color": "$textColor",
+                                                        "size": 15
+                                                },
+                                                {
+                                                        "key": "gold",
+                                                        "name": "黄金",
+                                                        "color": "$textColor",
+                                                        "size": 15
+                                                },
+                                                {
+                                                        "key": "diamond",
+                                                        "name": "钻石",
+                                                        "color": "$textColor",
+                                                        "size": 15
+                                                },
+                                                {
+                                                        "key": "purpur",
+                                                        "name": "紫珀",
+                                                        "color": "$textColor",
+                                                        "size": 15
+                                                },
+                                                {
+                                                        "key": "bedrock",
+                                                        "name": "基岩",
+                                                        "color": "$textColor",
+                                                        "size": 15
+                                                }
+                                        ]
+                                },
+                                {
+                                        "type": "RadioGroup",
+                                        "key": "level",
+                                        "name": "等级",
+                                        "color": "$textColor",
+                                        "size": 8,
+                                        "items": [
+                                                {
+                                                        "key": "1",
+                                                        "name": "Ⅰ",
+                                                        "color": "$textColor",
+                                                        "size": 15
+                                                },
+                                                {
+                                                        "key": "2",
+                                                        "name": "Ⅱ",
+                                                        "color": "$textColor",
+                                                        "size": 15
+                                                },
+                                                {
+                                                        "key": "3",
+                                                        "name": "Ⅲ",
+                                                        "color": "$textColor",
+                                                        "size": 15
+                                                },
+                                                {
+                                                        "key": "4",
+                                                        "name": "Ⅳ",
+                                                        "color": "$textColor",
+                                                        "size": 15
+                                                },
+                                                {
+                                                        "key": "5",
+                                                        "name": "Ⅴ",
+                                                        "color": "$textColor",
+                                                        "size": 15
+                                                }
+                                        ]
+                                }
+                        ]
+                },
+                {
+                        "type": "Switch",
+                        "name": "传送菜单",
+                        "color": "$textColor",
+                        "size": 12,
+                        "padding": [
+                                5,
+                                0,
+                                5,
+                                0
+                        ],
+                        "shortcut": {
+                                "type": "CheckedButton",
+                                "params": [
+                                        65,
+                                        65
+                                ],
+                                "no_circle": true,
+                                "off": "close/NeuronOff_TpMenu.png",
+                                "on": "open/NeuronOn_TpMenu.png",
+                                "icon": "open/NeuronOn_TpMenu.png"
+                        },
+                        "tag": "fun_teleport_menu"
+                },
+                {
+                        "type": "TextView",
+                        "name": "附魔菜单",
+                        "color": "$textColor",
+                        "size": 12,
+                        "padding": [
+                                8,
+                                8,
+                                8,
+                                8
+                        ],
+                        "shortcut": {
+                                "type": "ClickButton",
+                                "params": [
+                                        65,
+                                        65
+                                ],
+                                "no_circle": true,
+                                "icon": "other/Neuron_Enchante.png"
+                        },
+                        "tag": "fun_enchant_menu"
+                },
+                {
+                        "type": "TextView",
+                        "name": "物品编辑器",
+                        "color": "$textColor",
+                        "size": 12,
+                        "padding": [
+                                8,
+                                8,
+                                8,
+                                8
+                        ],
+                        "shortcut": {
+                                "type": "ClickButton",
+                                "params": [
+                                        65,
+                                        65
+                                ],
+                                "no_circle": true,
+                                "icon": "other/Neuron_ItemEditor.png"
+                        },
+                        "tag": "fun_item_editor"
+                }
+        ]
+}

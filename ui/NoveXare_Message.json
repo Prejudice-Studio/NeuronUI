@@ -1,0 +1,132 @@
+{
+  "type": "Menu",
+  "title": {
+    "name": "『NX-Message』",
+    "size": 15,
+    "elevation": 4,
+    "background": "$TitleBG",
+    "padding": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "colors": [
+      "$TitleColor",
+      "$TitleColor"
+    ],
+    "margins": [0, 0, 0, 0]
+  },
+  "color": "$MenuColor",
+  "alpha": 0.85,
+  "can_close": true,
+  "hide": true,
+  "margins": [0, 0, 0, 0],
+  "image_scaled_size": 40,
+  "radius": 10,
+  "show_dividers": false,
+    "items": [
+        {
+            "type": "TextView",
+            "name": "移除药效",
+            "color": "$TextColor",
+            "size": 12,
+            "plugin_command": "/ww effect clear",
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        {
+            "type": "TextView",
+            "name": "——切换服务器——",
+            "color": "$TextColor",
+            "size": 12,
+            "padding": [
+                6,
+                6,
+                6,
+                6
+            ]
+        },
+        {
+            "type": "TextView",
+            "name": "重进逐梦启源",
+            "color": "$TextColor",
+            "size": 12,
+            "plugin_command": "/ww server 45.253.201.40 11000",
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        {
+            "type": "TextView",
+            "name": "重进布吉岛",
+            "color": "$TextColor",
+            "size": 12,
+            "plugin_command": "/ww server play.bjd-mc.com 19132",
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        {
+            "type": "TextView",
+            "name": "重进花雨庭",
+            "color": "$TextColor",
+            "size": 12,
+            "plugin_command": "/ww server 42.186.17.118 19132",
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        {
+            "type": "TextView",
+            "name": "重进EC",
+            "color": "$TextColor",
+            "size": 12,
+            "plugin_command": "/ww server 42.186.67.15 19112",
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        {
+            "type": "TextView",
+            "name": "—————————",
+            "color": "$TextColor",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        {
+            "type": "TextView",
+            "name": "设置自己为目标",
+            "color": "$TextColor",
+            "size": 12,
+            "run_command": "/target self",
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ]
+        }
+    ]
+}

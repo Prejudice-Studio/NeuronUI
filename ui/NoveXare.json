@@ -1,0 +1,708 @@
+{
+  "type": "Menu",
+  "title": {
+    "name": "『NoveXare』",
+    "size": 15,
+    "elevation": 4,
+    "background": "$TitleBG",
+    "padding": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "colors": [
+      "$TitleColor",
+      "$TitleColor"
+    ],
+    "margins": [0, 0, 0, 0]
+  },
+  "color": "$MenuColor",
+  "alpha": 0.85,
+  "can_close": true,
+  "hide": true,
+  "margins": [0, 0, 0, 0],
+  "image_scaled_size": 40,
+  "radius": 10,
+  "show_dividers": false,
+    "items": [
+        {
+            "type": "TextView",
+            "name": "加载NoveXare",
+            "size": 12,
+            "color": "$TextColor",
+            "load_script": "NoveXare.js",
+            "tip": "不要多次点击我QwQ",
+            "tag": "fun_inventory_move",
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "items": [
+                {
+                    "type": "TextView",
+                    "name": "退出脚本",
+                    "color": "$TextColor",
+                    "size": 12,
+                    "key": "exit",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "SearchModule",
+                    "name": "搜索功能",
+                    "color": "$TextColor",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 12
+                },
+                {
+                    "type": "Switch",
+                    "key": "disabler",
+                    "name": "暂停NoveXare",
+                    "color": "$TextColor",
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "TestModule",
+                    "name": "测试功能",
+                    "color": "$TextColor",
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "IQBoost",
+                    "name": "IQBoost",
+                    "color": "$TextColor",
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "save_config",
+                    "name": "保存配置",
+                    "color": "$TextColor",
+                    "size": 12,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "load_config",
+                    "name": "加载配置",
+                    "color": "$TextColor",
+                    "size": 12,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "AutoSaveCfg",
+                    "color": "$TextColor",
+                    "name": "自动保存配置",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "AutoLoadCfg",
+                    "name": "自动加载配置",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "getDelay",
+                    "color": "$TextColor",
+                    "name": "获取网络延迟",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "checked": true
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "getSelf",
+                    "format": "获取自身信息延迟: %d ",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "value": 0,
+                    "min": 0,
+                    "max": 20
+                },
+                {
+                    "type": "Switch",
+                    "key": "auto_target",
+                    "name": "自动选择目标",
+                    "color": "$TextColor",
+                    "gravity": [
+                        "left"
+                    ],
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "checked": true
+                },
+                {
+                    "type": "TextView",
+                    "key": "entity_keyword",
+                    "name": "实体类型白名单",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "regex_enable",
+                    "name": "启用正则",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "checked": true
+                },
+                {
+                    "type": "TextView",
+                    "key": "regex",
+                    "name": "编辑正则",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "lock_target",
+                    "name": "锁定目标",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "check_size",
+                    "name": "检查碰撞箱",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "check_health",
+                    "name": "检查血量",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "check_rot",
+                    "name": "检查视角值",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "check_hide",
+                    "name": "检查是否隐身",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "check_ground",
+                    "name": "检查地面",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "check_wall",
+                    "name": "检查墙壁",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "check_name",
+                    "name": "检查名字",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "bypass_bjd",
+                    "name": "绕布吉岛假人",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "includeMob",
+                    "name": "实体",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "includePlayer",
+                    "name": "玩家",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "checked": true,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "infinite_distance",
+                    "name": "无限距离",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "NoHeigh",
+                    "name": "无视高度",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "checked": true
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "max_distance",
+                    "format": "目标最大距离 %.2f",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "value": 6.0,
+                    "min": 1.0,
+                    "max": 20.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "min_distance",
+                    "format": "目标最小距离 %.2f",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "value": 0.0,
+                    "min": 0.0,
+                    "max": 20.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "max_target_num",
+                    "format": "目标数量%d ",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "value": 3,
+                    "min": 1,
+                    "max": 20
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "limit_y",
+                    "format": "最高高度: %d ",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "value": 255,
+                    "min": 1,
+                    "max": 255
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "limit_min_y",
+                    "format": "最低高度: %d ",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "value": 0,
+                    "min": 0,
+                    "max": 255
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "reverse_target",
+                    "name": "反向排序",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "back_select",
+                    "name": "反向选择",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "select_mode",
+                    "name": "选择模式",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "distance",
+                            "name": "距离最近",
+                            "color": "$TextColor",
+                            "size": 10,
+                            "checked": true
+                        },
+                        {
+                            "key": "health",
+                            "name": "血量最少",
+                            "color": "$TextColor",
+                            "size": 10
+                        },
+                        {
+                            "key": "damage",
+                            "name": "伤害最低",
+                            "color": "$TextColor",
+                            "size": 10
+                        },
+                        {
+                            "key": "rot",
+                            "name": "准星最近",
+                            "color": "$TextColor",
+                            "size": 10
+                        },
+                        {
+                            "key": "items",
+                            "name": "背包物品最多",
+                            "color": "$TextColor",
+                            "size": 10
+                        },
+                        {
+                            "key": "random",
+                            "name": "随机",
+                            "color": "$TextColor",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "switch_delay",
+                    "format": "索敌延迟: %d ",
+                    "color": "$TextColor",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "value": 0,
+                    "min": 0,
+                    "max": 60
+                }
+            ]
+        },
+        {
+            "type": "TextView",
+            "name": "攻击类",
+            "color": "$TextColor",
+            "size": 12,
+            "open": "NoveXare_Combat",
+            "tip": "记得打开自动选择目标!!",
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        {
+            "type": "TextView",
+            "name": "移动类",
+            "color": "$TextColor",
+            "size": 12,
+            "open": "NoveXare_Movement",
+            "tip": "单人游戏可能用不了移动类",
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        {
+            "type": "TextView",
+            "name": "玩家类",
+            "color": "$TextColor",
+            "size": 12,
+            "open": "NoveXare_Player",
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        {
+            "type": "TextView",
+            "name": "事件类",
+            "color": "$TextColor",
+            "size": 12,
+            "open": "NoveXare_Event",
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        {
+            "type": "TextView",
+            "name": "娱乐类",
+            "color": "$TextColor",
+            "size": 12,
+            "open": "NoveXare_Misc",
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        {
+            "type": "TextView",
+            "name": "辅助类",
+            "color": "$TextColor",
+            "size": 12,
+            "open": "NoveXare_Auxiliary",
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        {
+            "type": "TextView",
+            "name": "渲染类",
+            "color": "$TextColor",
+            "size": 12,
+            "open": "NoveXare_Render",
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        {
+            "type": "TextView",
+            "name": "消息类",
+            "color": "$TextColor",
+            "size": 12,
+            "open": "NoveXare_Message",
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ]
+        }
+    ]
+}
