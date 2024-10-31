@@ -1,0 +1,19 @@
+{
+    "cmd": [],
+    "binds": {},
+    "key_binds": [],
+    "server_mode": 1,
+    "InfiniteAura_mode": 4,
+    "InfiniteAura_click": true,
+    "InfiniteAura_repeat": true,
+    "InfiniteAura_amove": true,
+    "InfiniteAura_backY": true,
+    "InfiniteAura_distance": 500,
+    "InfiniteAura_tick": 2,
+    "InfiniteAura_num": 1,
+    "InfiniteAura_move": 1,
+    "InfiniteAura_packet": 3,
+    "InfiniteAura": false,
+    "select_mode": 5,
+    "max_target_num": 8
+}

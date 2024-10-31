@@ -1,0 +1,44 @@
+{
+    "send": {
+        "ignore": [
+            1,
+            "Login",
+            34,
+            200,
+            144
+        ],
+        "intercept": [
+            2,
+            "PlayerStatus"
+        ],
+        "tip": "ignore填忽略显示的数据包名称/ID intercept填需要拦截的数据包/ID"
+    },
+    "receive": {
+        "ignore": [
+            1,
+            19,
+            25,
+            44,
+            26,
+            111,
+            108,
+            31,
+            39,
+            40,
+            58,
+            49,
+            18,
+            50,
+            21,
+            144,
+            "Login"
+        ],
+        "intercept": [
+            2,
+            121,
+            85,
+            200,
+            "PlayerStatus"
+        ]
+    }
+}
