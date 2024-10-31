@@ -1,5 +1,5 @@
 # NeuronUI
-一个基于RunAway的轻量美观简单的UI
+一个适配RunAway的轻量美观简单的UI
 
 [English](https://github.com/Prejudice-Studio/NeuronUI/blob/main/README.md)
 
