@@ -312,3 +312,14 @@
       "text": "设置HUD"
 - 优化数据包排序
 - 提前在conf_enchant.json内预留Minecraft Bedrock Edition更新的重锤专属附魔 [致密] [破甲] [风爆] **!!!!禁止使用**
+
+# 2024.10.31  Halloween
+- 优化UI文字字号
+- 添加 [AsakaMod](https://github.com/Prejudice-Studio/AsakaMod-36D-SoundEffect/)
+- 添加 [NoveXare 5.2 破解版](https://github.com/Justice-Cracker/NoveXare-Cracked)
+- [开源至Github](https://github.com/Prejudice-Studio/NeuronUI)
+- 祝各位万圣节快乐
+
+——Fix——
+- 移除有问题的AsakaMod
+- 修复Loophole无法打开
