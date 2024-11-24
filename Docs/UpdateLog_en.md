@@ -322,3 +322,6 @@ Update contents:
 ——Fix——
 - Removed the problematic AsakaMod
 - Fixed the issue that Loophole could not be opened
+
+# 2024.11.24  Material
+- Adapted to version 7.2.2
