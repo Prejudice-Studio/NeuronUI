@@ -323,3 +323,6 @@
 ——Fix——
 - 移除有问题的AsakaMod
 - 修复Loophole无法打开
+
+# 2024.11.24  Material
+- 适配7.2.2
