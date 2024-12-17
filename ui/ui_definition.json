@@ -13,6 +13,7 @@
         "Neuron_network",
         "Neuron_auxiliary",
         "Neuron_about",
+        "Neuron_Debug",
         "NoveXare",
         "NoveXare_Misc",
         "NoveXare_Message",
@@ -25,11 +26,13 @@
     ],
     "fun": [
     "script_build_tool",
-    "script_new_touch_control"
+    "script_new_touch_control",
+    "script_py_executor"
     ],
     "script": [
     "base_script.js",
     "build_tool.js",
-    "new_touch_control.js"
+    "new_touch_control.js",
+    "py_executor.js"
     ]
 }
