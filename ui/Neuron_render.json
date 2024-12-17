@@ -285,11 +285,253 @@
               "size": 8
             },
             {
+              "key": "2d_fill",
+              "name": "2D填充",
+              "color": "$TextColor",
+              "size": 8
+            },
+            {
               "key": "3d",
               "name": "3D",
               "color": "$TextColor",
               "size": 8,
               "checked": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Switch",
+      "name": "视图模型",
+      "color": "$TextColor",
+      "size": 10,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "tag": "fun_view_model",
+      "items": [
+        {
+          "type": "CheckBox",
+          "key": "translate",
+          "name": "平移",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "SeekBar",
+          "key": "translate_x",
+          "format": "X轴平移%.3f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 1.0,
+          "min": -2.0,
+          "max": 2.0
+        },
+        {
+          "type": "SeekBar",
+          "key": "translate_y",
+          "format": "Y轴平移%.3f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 1.0,
+          "min": -2.0,
+          "max": 2.0
+        },
+        {
+          "type": "SeekBar",
+          "key": "translate_z",
+          "format": "Z轴平移%.3f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 1.0,
+          "min": -2.0,
+          "max": 2.0
+        },
+        {
+          "type": "CheckBox",
+          "key": "rotate",
+          "name": "旋转",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "SeekBar",
+          "key": "rotate_angle",
+          "format": "旋转角度%.3f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 0.0,
+          "min": 0.0,
+          "max": 6.3
+        },
+        {
+          "type": "SeekBar",
+          "key": "rotate_x",
+          "format": "X轴旋转%.3f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 0.0,
+          "min": 0.0,
+          "max": 2.0
+        },
+        {
+          "type": "SeekBar",
+          "key": "rotate_y",
+          "format": "Y轴旋转%.3f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 0.0,
+          "min": 0.0,
+          "max": 2.0
+        },
+        {
+          "type": "SeekBar",
+          "key": "rotate_z",
+          "format": "Z轴旋转%.3f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 0.0,
+          "min": 0.0,
+          "max": 2.0
+        },
+        {
+          "type": "CheckBox",
+          "key": "scale",
+          "name": "缩放",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "SeekBar",
+          "key": "scale_x",
+          "format": "X轴缩放%.3f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 0.0,
+          "min": 0.0,
+          "max": 2.0
+        },
+        {
+          "type": "SeekBar",
+          "key": "scale_y",
+          "format": "Y轴缩放%.3f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 0.0,
+          "min": 0.0,
+          "max": 2.0
+        },
+        {
+          "type": "SeekBar",
+          "key": "scale_z",
+          "format": "Z轴缩放%.3f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 0.0,
+          "min": 0.0,
+          "max": 2.0
+        },
+        {
+          "type": "CheckBox",
+          "key": "swing_animation",
+          "name": "手持动画",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "RadioGroup",
+          "name": "手持动画类型",
+          "color": "$TextColor",
+          "size": 10,
+          "padding": [
+            5,
+            5,
+            5,
+            0
+          ],
+          "key": "swing_animation_type",
+          "items": [
+            {
+              "key": "1",
+              "name": "1",
+              "color": "$TextColor",
+              "size": 8
+            },
+            {
+              "key": "2",
+              "name": "2",
+              "color": "$TextColor",
+              "size": 8
+            },
+            {
+              "key": "3",
+              "name": "3",
+              "color": "$TextColor",
+              "size": 8
             }
           ]
         }
