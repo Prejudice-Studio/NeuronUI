@@ -306,6 +306,17 @@
       "name": "视图模型",
       "color": "$TextColor",
       "size": 10,
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [
+          65,
+          65
+        ],
+        "no_circle": true,
+        "off": "close/NeuronOff_ViewModel.png",
+        "on": "open/NeuronOn_ViewModel.png",
+        "icon": "open/NeuronOn_ViewModel.png"
+      },
       "padding": [
         5,
         0,
