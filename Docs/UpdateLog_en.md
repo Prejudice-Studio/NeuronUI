@@ -325,3 +325,6 @@ Update contents:
 
 # 2024.11.24  Material
 - Adapted to version 7.2.2
+
+# 2024.12.17  Andromeda
+- Support Version 7.2.6
