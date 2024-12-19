@@ -19,7 +19,7 @@ Update contents:
 - Added shortcut for [Dimensional Space] (EscapeSpace)
 
 # 2024.1.7  1.4
-- Adapted to 6.8.8
+- Support Version 6.8.8
 
 # 2024.1.7  1.5
 - Added UI Background
@@ -48,7 +48,7 @@ Update contents:
 - Standardized some naming
 
 # 2024.1.22 1.9
-- Adapted to 6.8.9
+- Support Version 6.8.9
 
 ———1.9.1———
 - Fixed some errors in ui_definition.json
@@ -69,7 +69,7 @@ Update contents:
 # 2024.1.30 2.2
 - Changed UI color scheme
 - Changed UI to rounded corners
-- Adapted to 6.9.0
+- Support Version 6.9.0
 
 ———2.2.1———
 - Modified some UI descriptions
@@ -88,57 +88,57 @@ Update contents:
 - Deleted user identifier
 
 # 2024.2.16  2.5
-- Adapted to 6.9.1
+- Support Version 6.9.1
 
 # 2024.2.19  2.6
 - Added multiple JS scripts from XxxGBRCxxX
 
 # 2024.3.1  2.7
-- Adapted to version 6.9.2
+- Support Version 6.9.2
 - Added shortcut key for [BJD Shop] (Remote BJD Shop)
 
 ———2.7.1———
 - Fixed issues in `ui_definition.json`
 
 ———2.7.2———
-- Adapted to version 6.9.3
+- Support Version 6.9.3
 
 # 2024.4.2  2.8
-- Adapted to version 6.9.4
+- Support Version 6.9.4
 
 ———2.8.1———
 - Added horizontal and vertical adjustment for anti-knockback
 
 # 2024.4.5  2.9
-- Adapted to version 6.9.5
+- Support Version 6.9.5
 
 # 2024.4.6  3.0
-- Adapted to version 6.9.6
+- Support Version 6.9.6
 
 # 2024.4.22  3.1
-- Adapted to version 6.9.7
+- Support Version 6.9.7
 - Added numerous NBT files
 - Added multiple structure files
 - Removed redundant comments in `ui_definition.json`
 - Deleted 'Wiki,' 'Chunkbase,' and 'Bilibili' menus
 
 # 2024.4.26  3.2
-- Adapted to version 6.9.9
+- Support Version 6.9.9
 
 # 2024.5.4  3.3
-- Adapted to version 7.0.0
+- Support Version 7.0.0
 
 ———3.3.1———
 - Added auto-aim parameter
 
 # 2024.5.19  3.4
-- Adapted to version 7.0.1
+- Support Version 7.0.1
 
 ———3.4.1———
 - Added shortcut key for [Xray] (Block Vision)
 
 # 2024.5.19  3.5
-- Adapted to version 7.0.2
+- Support Version 7.0.2
 - Added shortcut keys for [Block Outline Render], [Entity Tracking] (Tracer), and [ESP]
 - Deleted 'Potion' menu
 
@@ -204,7 +204,7 @@ Update contents:
 - Deleted all JavaScript files from XxxGBRCxxX
 - Fixed various text description errors
 - Optimized file size
-- Adapted to HYTMod 2.2.2
+- Support HYTMod 2.2.2
 
 ———3.7.2———
 - Fixed material path errors for [Packet Manager] (PacketManager) shortcut key
@@ -215,7 +215,7 @@ Update contents:
 - Corrected various text descriptions
 
 # 2024.6.17 3.8
-- Adapted to version 7.0.3
+- Support Version 7.0.3
 - Deleted shortcut keys for [Tether Line] (TetherLine), [Particle Line] (ParticleLine), and [Command Execution] (Command)
 - Deleted 'Command' menu
 - Moved [No Particle Display] (NoParticle) to a new menu location
@@ -235,7 +235,7 @@ Update contents:
 - Added shortcut key for [Auto Clicker] (AutoClicker)
 
 # 2024.6.18 3.9
-- Adapted to version 7.0.4
+- Support Version 7.0.4
 
 # 2024.7.9  End
 - Optimized `Neuron_Bhop.js` and `Neuron_EscapeSpace.js`
@@ -247,30 +247,30 @@ Update contents:
 - Adjusted text size in certain menus
 
 # 2024.7.9  Star
-- Adapted to version 7.0.5
+- Support Version 7.0.5
 
 # 2024.7.11  Nova
-- Adapted to version 7.0.6
+- Support Version 7.0.6
 
 # 2024.7.18  Aurora
-- Adapted to version 7.0.9
+- Support Version 7.0.9
 - Fixed missing enchantment attributes in the Enchantment menu
 - Fixed menu issues
-- Adapted to NoveXare-3.6
+- Support NoveXare-3.6
 
 # 2024.7.19  Epiphany
 - Fixed various menu errors
 - Restructured and reorganized all features; no longer based on default or DianaGodUI
 - Modified menu order
 - Removed version with dynamic background
-- Adapted to NoveXare-3.7.1
+- Support NoveXare-3.7.1
 - Corrected descriptions in `UpdateLog.md`
 
 ———Epiphany_Fi———
 - Fixed menu loading errors
 
 # 2024.7.23  Arrogant
-- Adapted to version 7.1.0
+- Support Version 7.1.0
 - Corrected errors in `UpdateLog.md`
 
 ——Arrogant-NBT——
@@ -278,7 +278,7 @@ Update contents:
 
 # 2024.8.4  Atlantis
 - Modified packet manager order
-- Adapted to version 7.1.1
+- Support Version 7.1.1
 - Cancelled adaptation for NoveXare unless demand increases
 - Optimized file size
 - Relocated certain features
@@ -288,21 +288,21 @@ Update contents:
 - Updated `attackDropItem.js`
 
 # 2024.8.11  Ocean
-- Adapted to version 7.1.3
+- Support Version 7.1.3
 - Removed [SAUTH Login] and its shortcut key (removed in version 7.1.3)
 - Deleted unused `attackDropItem.js`
 
 # 2024.9.29  Immutable
-- Adapted to version 7.1.6
+- Support Version 7.1.6
 - Deleted shortcut key for [Zero Day] (ZeroDay)
 - Removed unused 'InfiniteAura' JavaScript and shortcut keys to optimize UI size and improve loading speed
 
 # 2024.10.1  Celebration
-- Adapted to version 7.1.7
+- Support Version 7.1.7
 - Wishing everyone a happy National Day
 
 # 2024.10.14  Ink
-- Adapted to version 7.2.0
+- Support Version 7.2.0
 - Corrected text errors in `ui_definition.json`
 
 # 2024.10.27  Liz
@@ -324,7 +324,7 @@ Update contents:
 - Fixed the issue that Loophole could not be opened
 
 # 2024.11.24  Material
-- Adapted to version 7.2.2
+- Support Version 7.2.2
 
 # 2024.12.17  Andromeda
 - Support Version 7.2.6
