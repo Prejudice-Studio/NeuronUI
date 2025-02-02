@@ -1,0 +1,344 @@
+{
+  "type": "Menu",
+  "title": {
+    "name": "『Settings』",
+    "size": 15,
+    "elevation": 4,
+    "background": "$TitleBG",
+    "padding": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "colors": [
+      "$TitleColor",
+      "$TitleColor"
+    ],
+    "margins": [0, 0, 0, 0]
+  },
+  "color": "$MenuColor",
+  "alpha": 0.85,
+  "can_close": true,
+  "hide": true,
+  "margins": [0, 0, 0, 0],
+  "image_scaled_size": 40,
+  "radius": 10,
+  "show_dividers": false,
+  "items": [
+    {
+      "type": "Switch",
+      "name": "显示水印",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_WaterMark.png",
+        "on":"open/NeuronOn_WaterMark.png",
+        "icon":"open/NeuronOn_WaterMark.png"
+      },
+      "tag": "fun_watermark"
+    },
+    {
+      "type": "Switch",
+      "name": "加入游戏自动复制地址",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_CopyAddress.png",
+        "on":"open/NeuronOn_CopyAddress.png",
+        "icon":"open/NeuronOn_CopyAddress.png"
+      },
+      "tag": "fun_join_copy_address"
+    },
+    {
+      "type": "Switch",
+      "name": "悬浮窗口半屏显示",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "checked": true,
+      "register_setting": "setting_window_cut"
+    },
+    {
+      "type": "Switch",
+      "name": "隐藏菜单快捷按钮(长按)",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_HideMenu.png",
+        "on":"open/NeuronOn_HideMenu.png",
+        "icon":"open/NeuronOn_HideMenu.png"
+      },
+      "tag": "fun_hide_menu_shortcut"
+    },
+    {
+      "type": "TextView",
+      "name": "关于",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "open": "Neuron_about"
+    },
+    {
+      "type": "TextView",
+      "name": "删除游戏数据",
+      "color": "$ItemSet",
+      "size": 12,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "shortcut": {
+        "type": "ClickButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "icon":"other/Neuron_DeleteAppData.png"
+      },
+      "tag": "fun_delete_app_data"
+    },
+    {
+      "type": "TextView",
+      "name": "删除用户数据",
+      "color": "$ItemSet",
+      "size": 12,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "shortcut": {
+        "type": "ClickButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "icon":"other/Neuron_DeleteUserData.png"
+      },
+      "tag": "fun_delete_user_data"
+    },
+    {
+      "type": "TextView",
+      "name": "删除下载包缓存",
+      "color": "$ItemSet",
+      "size": 12,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "shortcut": {
+        "type": "ClickButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "icon":"other/Neuron_DeletePackCache.png"
+      },
+      "tag": "fun_delete_pack_cache"
+    },
+    {
+      "type": "TextView",
+      "name": "退出游戏登录",
+      "color": "$ItemSet",
+      "size": 12,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "shortcut": {
+        "type": "ClickButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "icon":"other/Neuron_LogOut.png"
+      },
+      "tag": "fun_netease_logout"
+    },
+    {
+      "type": "TextView",
+      "name": "RN显示",
+      "color": "$ItemSet",
+      "size": 12,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "shortcut": {
+        "type": "ClickButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "icon":"other/Neuron_ReactNativeShow.png"
+      },
+      "tag": "fun_rn_visible"
+    },
+    {
+      "type": "TextView",
+      "name": "RN隐藏",
+      "color": "$ItemSet",
+      "size": 12,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "shortcut": {
+        "type": "ClickButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "icon":"other/Neuron_ReactNativeHide.png"
+      },
+      "tag": "fun_rn_gone"
+    },
+    {
+      "type": "TextView",
+      "name": "RN开启",
+      "color": "$ItemSet",
+      "size": 12,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "shortcut": {
+        "type": "ClickButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "icon":"other/Neuron_ReactNativeOpen.png"
+      },
+      "tag": "fun_rn_open"
+    },
+    {
+      "type": "TextView",
+      "name": "RN关闭",
+      "color": "$ItemSet",
+      "size": 12,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "shortcut": {
+        "type": "ClickButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "icon":"other/Neuron_ReactNativeClose.png"
+      },
+      "tag": "fun_rn_close"
+    },
+    {
+      "type": "TextView",
+      "name": "显示开发配置窗口",
+      "color": "$ItemSet",
+      "size": 12,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "shortcut": {
+        "type": "ClickButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "icon":"other/Neuron_ReactNativeShowDevOptionsDialog.png"
+      },
+      "tag": "fun_rn_show_dev_options_dialog"
+    },
+    {
+      "type": "TextView",
+      "name": "MCPDecrypt",
+      "color": "$ItemSet",
+      "size": 12,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "shortcut": {
+        "type": "ClickButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "icon":"other/Neuron_MCPDecrypt.png"
+      },
+      "tag": "fun_mcp_decrypt"
+    },
+    {
+      "type": "Switch",
+      "name": "RN Debug",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_ReactNativeDebug.png",
+        "on":"open/NeuronOn_ReactNativeDebug.png",
+        "icon":"open/NeuronOn_ReactNativeDebug.png"
+      },
+      "tag": "fun_rn_debugable"
+    },
+    {
+      "type": "TextView",
+      "name": "Debug",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "open": "Neuron_Debug"
+    }
+  ]
+}

@@ -1,0 +1,551 @@
+{
+  "type": "Menu",
+  "title": {
+    "name": "『Movement』",
+    "size": 15,
+    "elevation": 4,
+    "background": "$TitleBG",
+    "padding": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "colors": [
+      "$TitleColor",
+      "$TitleColor"
+    ],
+    "margins": [0, 0, 0, 0]
+  },
+  "color": "$MenuColor",
+  "alpha": 0.85,
+  "can_close": true,
+  "hide": true,
+  "margins": [0, 0, 0, 0],
+  "image_scaled_size": 40,
+  "radius": 10,
+  "show_dividers": false,
+  "items": [
+    {
+      "type": "Switch",
+      "name": "踏空",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_Airjump.png",
+        "on":"open/NeuronOn_Airjump.png",
+        "icon":"open/NeuronOn_Airjump.png"
+      },
+      "tag": "fun_air_jump",
+      "items": [
+        {
+          "type": "CheckBox",
+          "key": "auto_jump",
+          "name": "自动跳跃",
+          "color": "$TextColor",
+          "size": 8
+        }
+      ]
+    },
+    {
+      "type": "Switch",
+      "name": "冲刺",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_Sprint.png",
+        "on":"open/NeuronOn_Sprint.png",
+        "icon":"open/NeuronOn_Sprint.png"
+      },
+      "tag": "fun_air_sprint",
+      "items": [
+        {
+          "type": "SeekBar",
+          "key": "move_speed",
+          "format": "移动速度%.2f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 1.1,
+          "min": 0.1,
+          "max": 3.0
+        },
+        {
+          "type": "SeekBar",
+          "key": "up_down_speed",
+          "format": "上下速度%.2f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 2.0,
+          "min": 0.0,
+          "max": 20.0
+        }
+      ]
+    },
+    {
+      "type": "Switch",
+      "name": "自动搭路",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_Scaffold.png",
+        "on":"open/NeuronOn_Scaffold.png",
+        "icon":"open/NeuronOn_Scaffold.png"
+      },
+      "tag": "fun_auto_build",
+      "items": [
+        {
+          "type": "CheckBox",
+          "key": "force_place",
+          "name": "强行放置",
+          "color": "$TextColor",
+          "size": 8,
+          "checked": true
+        },
+        {
+          "type": "SeekBar",
+          "key": "offset",
+          "format": "高度偏移%.2f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 0.0,
+          "min": 0.0,
+          "value": 2.5,
+          "min": 1.80,
+          "max": 5.0
+        }
+      ]
+    },
+    {
+      "type": "Switch",
+      "name": "点击传送",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_ClickTP.png",
+        "on":"open/NeuronOn_ClickTP.png",
+        "icon":"open/NeuronOn_ClickTP.png"
+      },
+      "tag": "fun_click_teleport"
+    },
+    {
+      "type": "Switch",
+      "name": "移动跳跃",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_MoveJump.png",
+        "on":"open/NeuronOn_MoveJump.png",
+        "icon":"open/NeuronOn_MoveJump.png"
+      },
+      "tag": "fun_move_jump"
+    },
+    {
+      "type": "Switch",
+      "name": "水上行走",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_Jesus.png",
+        "on":"open/NeuronOn_Jesus.png",
+        "icon":"open/NeuronOn_Jesus.png"
+      },
+      "tag": "fun_jesus"
+    },
+    {
+      "type": "Switch",
+      "name": "自动前进",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_AutoForward.png",
+        "on":"open/NeuronOn_AutoForward.png",
+        "icon":"open/NeuronOn_AutoForward.png"
+      },
+      "tag": "fun_auto_forward"
+    },
+    {
+      "type": "Switch",
+      "name": "虚空回弹",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_AntiVoid.png",
+        "on":"open/NeuronOn_AntiVoid.png",
+        "icon":"open/NeuronOn_AntiVoid.png"
+      },
+      "tag": "fun_anti_void",
+      "items": [
+        {
+          "type": "SeekBar",
+          "key": "speed",
+          "format": "下落速度%.2f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 1.3,
+          "min": 0.1,
+          "max": 3.0
+        }
+      ]
+    },
+    {
+      "type": "Switch",
+      "name": "实体骑乘",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_EntityRide.png",
+        "on":"open/NeuronOn_EntityRide.png",
+        "icon":"open/NeuronOn_EntityRide.png"
+      },
+      "tag": "fun_entity_riding"
+    },
+    {
+      "type": "Switch",
+      "name": "坐骑飞行",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        10
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_RideFly.png",
+        "on":"open/NeuronOn_RideFly.png",
+        "icon":"open/NeuronOn_RideFly.png"
+      },
+      "tag": "fun_ride_flying",
+      "items": [
+        {
+          "type": "CheckBox",
+          "key": "no_clip",
+          "name": "允许穿墙",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "CheckBox",
+          "key": "no_move",
+          "name": "灵魂出窍",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "CheckBox",
+          "key": "update_chunk",
+          "name": "更新区块",
+          "color": "$TextColor",
+          "size": 8,
+          "on": "使用船飞行时开启可以自动加载区块"
+        },
+        {
+          "type": "SeekBar",
+          "key": "move_speed",
+          "format": "移动速度%.2f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 4.0,
+          "min": 0.1,
+          "max": 20.0
+        },
+        {
+          "type": "SeekBar",
+          "key": "up_down_speed",
+          "format": "上下速度%.2f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 1.5,
+          "min": 0.1,
+          "max": 20.0
+        }
+      ]
+    },
+    {
+      "type": "Switch",
+      "name": "高跳",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_HighJump.png",
+        "on":"open/NeuronOn_HighJump.png",
+        "icon":"open/NeuronOn_HighJump.png"
+      },
+      "tag": "fun_jump_high",
+      "items": [
+        {
+          "type": "SeekBar",
+          "key": "val",
+          "format": "力度%.2f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 0.75,
+          "min": 0.1,
+          "max": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Switch",
+      "name": "自动滑翔",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_AutoGlide.png",
+        "on":"open/NeuronOn_AutoGlide.png",
+        "icon":"open/NeuronOn_AutoGlide.png"
+      },
+      "tag": "fun_gliding"
+    },
+    {
+      "type": "Switch",
+      "name": "自动游泳",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_AutoSwim.png",
+        "on":"open/NeuronOn_AutoSwim.png",
+        "icon":"open/NeuronOn_AutoSwim.png"
+      },
+      "tag": "fun_swimming"
+    },
+    {
+      "type": "Switch",
+      "name": "自动冲刺",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_AutoSprint.png",
+        "on":"open/NeuronOn_AutoSprint.png",
+        "icon":"open/NeuronOn_AutoSprint.png"
+      },
+      "tag": "fun_auto_sprint",
+      "items": [
+        {
+          "type": "CheckBox",
+          "key": "extra_speed",
+          "name": "额外加速",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "SeekBar",
+          "key": "speed",
+          "format": "冲刺速度%.2f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 3.1,
+          "min": 0.1,
+          "max": 10.0
+        }
+      ]
+    },
+    {
+      "type": "Switch",
+      "name": "自动爬梯",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_AutoLadder.png",
+        "on":"open/NeuronOn_AutoLadder.png",
+        "icon":"open/NeuronOn_AutoLadder.png"
+      },
+      "tag": "fun_auto_ladder",
+      "items": [
+        {
+          "type": "SeekBar",
+          "key": "speed",
+          "format": "速度%.3f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 0.6,
+          "min": 0.1,
+          "max": 1.0
+        }
+      ]
+    }
+  ]
+}

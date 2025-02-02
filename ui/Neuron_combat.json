@@ -1,0 +1,718 @@
+{
+  "type": "Menu",
+  "title": {
+    "name": "『Combat』",
+    "size": 15,
+    "elevation": 4,
+    "background": "$TitleBG",
+    "padding": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "colors": [
+      "$TitleColor",
+      "$TitleColor"
+    ],
+    "margins": [0, 0, 0, 0]
+  },
+  "color": "$MenuColor",
+  "alpha": 0.85,
+  "can_close": true,
+  "hide": true,
+  "margins": [0, 0, 0, 0],
+  "image_scaled_size": 40,
+  "radius": 10,
+  "show_dividers": false,
+  "items": [
+    {
+      "type": "Switch",
+      "name": "杀戮光环",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_KillAura.png",
+        "on":"open/NeuronOn_KillAura.png",
+        "icon":"open/NeuronOn_KillAura.png"
+      },
+      "tag": "fun_killaura",
+      "items": [
+        {
+          "type": "CheckBox",
+          "key": "target",
+          "name": "自选",
+          "color": "$TextColor",
+          "size": 8,
+          "on": "自动攻击选中目标，需要先攻击一次"
+        },
+        {
+          "type": "CheckBox",
+          "key": "player",
+          "name": "玩家",
+          "color": "$TextColor",
+          "size": 8,
+          "on": "自动攻击周围玩家"
+        },
+        {
+          "type": "CheckBox",
+          "key": "mob",
+          "name": "生物",
+          "color": "$TextColor",
+          "size": 8,
+          "on": "自动攻击周围生物"
+        },
+        {
+          "type": "CheckBox",
+          "key": "crystal",
+          "name": "水晶",
+          "color": "$TextColor",
+          "size": 8,
+          "on": "自动攻击周围水晶，推荐EaseCation服务器使用"
+        },
+        {
+          "type": "Switch",
+          "key": "spin",
+          "name": "旋转",
+          "color": "$TextColor",
+          "size": 8,
+          "on": "攻击时触发三叉戟范围攻击"
+        },
+        {
+          "type": "Switch",
+          "key": "action",
+          "name": "手部动作",
+          "color": "$TextColor",
+          "size": 8,
+          "on": "攻击时让手部挥动，其他人可见",
+          "checked": true
+        },
+        {
+          "type": "Switch",
+          "key": "ec_cps",
+          "name": "EC-CPS",
+          "color": "$TextColor",
+          "size": 8,
+          "on": "绕过EC服务器CPS检测"
+        },
+        {
+          "type": "SeekBar",
+          "key": "speed",
+          "format": "攻击速度%d",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 20,
+          "min": 1,
+          "max": 40
+        },
+        {
+          "type": "SeekBar",
+          "key": "count",
+          "format": "攻击数量%d",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 3,
+          "min": 1,
+          "max": 40
+        },
+        {
+          "type": "SeekBar",
+          "key": "distance",
+          "format": "攻击距离%.2f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 7.0,
+          "min": 1.0,
+          "max": 100.0
+        },
+        {
+          "type": "SeekBar",
+          "key": "cps_speed",
+          "format": "CPS限制%d",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 2147483647,
+          "min": 1,
+          "max": 2147483647
+        },
+        {
+          "type": "Switch",
+          "key": "cps",
+          "name": "CPS显示",
+          "color": "$TextColor",
+          "size": 8
+        }
+      ]
+    },
+    {
+      "type": "Switch",
+      "name": "自动瞄准",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_Aim.png",
+        "on":"open/NeuronOn_Aim.png",
+        "icon":"open/NeuronOn_Aim.png"
+      },
+      "tag": "fun_aimbot",
+      "items": [
+        {
+          "type": "SeekBar",
+          "key": "speed",
+          "format": "视角速度%.2f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 1.00,
+          "min": 0.01,
+          "max": 2.00
+        },
+        {
+          "type": "SeekBar",
+          "key": "distance",
+          "format": "玩家距离%.2f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 11.1,
+          "min": 0.5,
+          "max": 150.0
+        },
+        {
+          "type": "CheckBox",
+          "key": "player",
+          "name": "玩家",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "CheckBox",
+          "key": "mob",
+          "name": "生物",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "CheckBox",
+          "key": "lock_target",
+          "name": "锁定当前目标",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "CheckBox",
+          "key": "input",
+          "name": "模拟滑动",
+          "color": "$TextColor",
+          "size": 8,
+          "checked": true
+        },
+        {
+          "type": "CheckBox",
+          "key": "rotation",
+          "name": "更新视角",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "CheckBox",
+          "key": "body",
+          "name": "更新身体",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "CheckBox",
+          "key": "depart",
+          "name": "分离相机",
+          "color": "$TextColor",
+          "size": 8
+        }
+      ]
+    },
+    {
+      "type": "Switch",
+      "name": "碰撞箱",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_Hitbox.png",
+        "on":"open/NeuronOn_Hitbox.png",
+        "icon":"open/NeuronOn_Hitbox.png"
+      },
+      "tag": "fun_hitbox",
+      "items": [
+        {
+          "type": "CheckBox",
+          "key": "player",
+          "name": "玩家",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "CheckBox",
+          "key": "mob",
+          "name": "生物",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "SeekBar",
+          "key": "size",
+          "format": "实体大小%.2f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 6.0,
+          "min": 0.0,
+          "max": 30.0
+        }
+      ]
+    },
+    {
+      "type": "Switch",
+      "name": "智能队友",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_SmartTeam.png",
+        "on":"open/NeuronOn_SmartTeam.png",
+        "icon":"open/NeuronOn_SmartTeam.png"
+      },
+      "tag": "fun_smart_team",
+      "items": [
+        {
+          "type": "CheckBox",
+          "key": "check_armor",
+          "name": "排除相同头盔颜色",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "CheckBox",
+          "key": "check_skin",
+          "name": "排除空皮肤",
+          "color": "$TextColor",
+          "size": 8,
+          "on": "尝试排除没有皮肤的玩家"
+        },
+        {
+          "type": "CheckBox",
+          "key": "check_regex",
+          "name": "正则表达式",
+          "color": "$TextColor",
+          "size": 8,
+          "on": "启用正则表达式匹配"
+        },
+        {
+          "type": "CheckBox",
+          "key": "click_mode",
+          "name": "点击白名单",
+          "color": "$TextColor",
+          "size": 8,
+          "on": "点击实体加入白名单"
+        },
+        {
+          "type": "TextView",
+          "key": "regex",
+          "name": "编辑名称正则",
+          "color": "$TextColor",
+          "size": 12,
+          "padding": [
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "type": "TextView",
+          "key": "list",
+          "name": "显示白名单",
+          "color": "$TextColor",
+          "size": 12,
+          "padding": [
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "type": "TextView",
+          "key": "add_chunk_player",
+          "name": "添加区块白名单玩家",
+          "color": "$TextColor",
+          "size": 12,
+          "padding": [
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "type": "TextView",
+          "key": "add_world_player",
+          "name": "添加世界白名单玩家",
+          "color": "$TextColor",
+          "size": 12,
+          "padding": [
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "type": "TextView",
+          "key": "remove",
+          "name": "移除白名单玩家",
+          "color": "$TextColor",
+          "size": 12,
+          "padding": [
+            5,
+            5,
+            5,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Switch",
+      "name": "锁背",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_LockBack.png",
+        "on":"open/NeuronOn_LockBack.png",
+        "icon":"open/NeuronOn_LockBack.png"
+      },
+      "tag": "fun_lock_behind",
+      "items": [
+        {
+          "type": "SeekBar",
+          "key": "distance",
+          "format": "玩家距离%.2f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 11.1,
+          "min": 0.5,
+          "max": 100.0
+        },
+        {
+          "type": "CheckBox",
+          "key": "lock_target",
+          "name": "锁定目标",
+          "color": "$TextColor",
+          "size": 8
+        }
+      ]
+    },
+    {
+      "type": "Switch",
+      "name": "环绕攻击",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_Surround.png",
+        "on":"open/NeuronOn_Surround.png",
+        "icon":"open/NeuronOn_Surround.png"
+      },
+      "tag": "fun_surround_attack",
+      "items": [
+        {
+          "type": "SeekBar",
+          "key": "distance",
+          "format": "距离%.2f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 11.1,
+          "min": 0.5,
+          "max": 50.0
+        },
+        {
+          "type": "SeekBar",
+          "key": "speed",
+          "format": "速度%.2f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 20.0,
+          "min": 1.0,
+          "max": 30.0
+        },
+        {
+          "type": "CheckBox",
+          "key": "lock_target",
+          "name": "锁定目标",
+          "color": "$TextColor",
+          "size": 8
+        }
+      ]
+    },
+    {
+      "type": "Switch",
+      "name": "抗击退",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_NoKB.png",
+        "on":"open/NeuronOn_NoKB.png",
+        "icon":"open/NeuronOn_NoKB.png"
+      },
+      "tag": "fun_no_knockback",
+      "items": [
+        {
+          "type": "CheckBox",
+          "key": "all",
+          "name": "全部抗击退",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "SeekBar",
+          "key": "horizontal",
+          "format": "水平%.2f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 1.0,
+          "min": 0.1,
+          "max": 10.0
+        },
+        {
+          "type": "SeekBar",
+          "key": "vertical",
+          "format": "垂直%.2f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 1.0,
+          "min": 0.1,
+          "max": 10.0
+        }
+      ]
+    },
+    {
+      "type": "Switch",
+      "name": "自动选取武器",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_AutoWeapon.png",
+        "on":"open/NeuronOn_AutoWeapon.png",
+        "icon":"open/NeuronOn_AutoWeapon.png"
+      },
+      "tag": "fun_auto_weapons",
+      "items": [
+        {
+          "type": "RadioGroup",
+          "key": "mode",
+          "name": "选取模式",
+          "color": "$TextColor",
+          "size": 8,
+          "items": [
+            {
+              "key": "hot",
+              "name": "物品栏",
+              "color": "$TextColor",
+              "checked": true,
+              "size": 8
+            },
+            {
+              "key": "inv",
+              "name": "背包",
+              "color": "$TextColor",
+              "size": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Switch",
+      "name": "自动选取方块",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_AutoBlock.png",
+        "on":"open/NeuronOn_AutoBlock.png",
+        "icon":"open/NeuronOn_AutoBlock.png"
+      },
+      "tag": "fun_auto_block",
+      "items": [
+        {
+          "type": "RadioGroup",
+          "key": "mode",
+          "name": "选取模式",
+          "color": "$TextColor",
+          "size": 8,
+          "items": [
+            {
+              "key": "hot",
+              "name": "物品栏",
+              "color": "$TextColor",
+              "checked": true,
+              "size": 8
+            },
+            {
+              "key": "inv",
+              "name": "背包",
+              "color": "$TextColor",
+              "size": 8
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

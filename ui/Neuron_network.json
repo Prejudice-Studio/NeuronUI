@@ -1,0 +1,109 @@
+{
+  "type": "Menu",
+  "title": {
+    "name": "『Network』",
+    "size": 15,
+    "elevation": 4,
+    "background": "$TitleBG",
+    "padding": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "colors": [
+      "$TitleColor",
+      "$TitleColor"
+    ],
+    "margins": [0, 0, 0, 0]
+  },
+  "color": "$MenuColor",
+  "alpha": 0.85,
+  "can_close": true,
+  "hide": true,
+  "margins": [0, 0, 0, 0],
+  "image_scaled_size": 40,
+  "radius": 10,
+  "show_dividers": false,
+  "items": [
+    {
+      "type": "Switch",
+      "name": "重复数据包",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_RePacket.png",
+        "on":"open/NeuronOn_RePacket.png",
+        "icon":"open/NeuronOn_RePacket.png"
+      },
+      "tag": "fun_multiple_packet",
+      "items": [
+        {
+          "type": "SeekBar",
+          "key": "count",
+          "format": "数量%d",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 50,
+          "min": 1,
+          "max": 100
+        }
+      ]
+    },
+    {
+      "type": "Switch",
+      "name": "停止数据包",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_NoPacket.png",
+        "on":"open/NeuronOn_NoPacket.png",
+        "icon":"open/NeuronOn_NoPacket.png"
+      },
+      "tag": "fun_no_packet"
+    },
+    {
+      "type": "TextView",
+      "name": "网络数据包管理+",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "shortcut": {
+        "type": "ClickButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "icon":"other/Neuron_PacketManager.png"
+      },
+      "tag": "fun_network_packet_mgr"
+    }
+  ]
+}

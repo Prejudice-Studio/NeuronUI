@@ -1,0 +1,193 @@
+{
+  "type": "Menu",
+  "title": {
+    "name": "『Neuron』",
+    "size": 15,
+    "elevation": 4,
+    "background": "$TitleBG",
+    "padding": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "colors": [
+      "$TitleColor",
+      "$TitleColor"
+    ],
+    "margins": [0, 0, 0, 0]
+  },
+  "color": "$MenuColor",
+  "alpha": 0.85,
+  "can_close": false,
+  "margins": [0, 0, 0, 0],
+  "image_scaled_size": 40,
+  "radius": 10,
+  "show_dividers": false,
+  "items": [
+    {
+      "type": "Switch",
+      "name": "WaterMark",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "tag": "fun_watermark"
+    },
+    {
+      "type": "TextView",
+      "name": "JS Loader",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "load_script": "JsLoader.js"
+    },
+    {
+      "type": "TextView",
+      "name": "Extra",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "open": "Neuron_extra"
+    },
+    {
+      "type": "TextView",
+      "name": "Combat",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "open": "Neuron_combat"
+    },
+    {
+      "type": "TextView",
+      "name": "Movement",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "open": "Neuron_movement"
+    },
+    {
+      "type": "TextView",
+      "name": "Player",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "open": "Neuron_player"
+    },
+    {
+      "type": "TextView",
+      "name": "Render",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "open": "Neuron_render"
+    },
+    {
+      "type": "TextView",
+      "name": "Loophole",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "open": "Neuron_loophole"
+    },
+    {
+      "type": "TextView",
+      "name": "Network",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "open": "Neuron_network"
+    },
+    {
+      "type": "TextView",
+      "name": "Auxiliary",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "open": "Neuron_auxiliary"
+    },
+    {
+      "type": "TextView",
+      "name": "Settings",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "open": "Neuron_settings"
+    },
+    {
+      "type": "TextView",
+      "name": "Hide All",
+      "color": "$MenuHide",
+      "size": 12,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "tag": "fun_hide"
+    },
+    {
+      "type": "TextView",
+      "html": "UI作者：<a href=''>MoYuanCN</a>",
+      "url": "https://github.com/MoYuanCN/",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [5, 5, 5, 5]
+    }
+  ]
+}

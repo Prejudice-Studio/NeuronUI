@@ -1,0 +1,29 @@
+{
+    "name": "Neuron UI Andromeda",
+    "theme": "Theme.Material3.DayNight.NoActionBar",
+    "ui": [
+        "Neuron_extra",
+        "Neuron_main",
+        "Neuron_combat",
+        "Neuron_player",
+        "Neuron_movement",
+        "Neuron_render",
+        "Neuron_settings",
+        "Neuron_loophole",
+        "Neuron_network",
+        "Neuron_auxiliary",
+        "Neuron_about",
+        "Neuron_Debug"
+    ],
+    "fun": [
+    "script_build_tool",
+    "script_new_touch_control",
+    "script_py_executor"
+    ],
+    "script": [
+    "base_script.js",
+    "build_tool.js",
+    "new_touch_control.js",
+    "py_executor.js"
+    ]
+}

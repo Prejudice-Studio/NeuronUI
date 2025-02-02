@@ -1,0 +1,137 @@
+{
+  "type": "Menu",
+  "title": {
+    "name": "『About』",
+    "size": 15,
+    "elevation": 4,
+    "background": "$TitleBG",
+    "padding": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "colors": [
+      "$TitleColor",
+      "$TitleColor"
+    ],
+    "margins": [0, 0, 0, 0]
+  },
+  "color": "$MenuColor",
+  "alpha": 0.85,
+  "can_close": true,
+  "hide": true,
+  "margins": [0, 0, 0, 0],
+  "image_scaled_size": 40,
+  "radius": 10,
+  "show_dividers": false,
+  "items": [
+    {
+      "type": "TextView",
+      "name": "使用的开源项目",
+      "size": 12,
+      "padding": [
+        10,
+        5,
+        10,
+        5
+      ]
+    },
+    {
+      "type": "TextView",
+      "html": "<a href=''>RxJava</a>",
+      "url": "https://github.com/ReactiveX/RxAndroid",
+      "size": 12,
+      "padding": [
+        10,
+        5,
+        10,
+        5
+      ]
+    },
+    {
+      "type": "TextView",
+      "html": "<a href=''>Okhttp</a>",
+      "url": "https://github.com/square/okhttp",
+      "size": 12,
+      "padding": [
+        10,
+        5,
+        10,
+        5
+      ]
+    },
+    {
+      "type": "TextView",
+      "html": "<a href=''>Android-gif-drawable</a>",
+      "url": "https://github.com/koral--/android-gif-drawable",
+      "size": 12,
+      "padding": [
+        10,
+        5,
+        10,
+        5
+      ]
+    },
+    {
+      "type": "TextView",
+      "html": "<a href=''>PermissionX</a>",
+      "url": "https://github.com/guolindev/PermissionX",
+      "size": 12,
+      "padding": [
+        10,
+        5,
+        10,
+        5
+      ]
+    },
+    {
+      "type": "TextView",
+      "html": "<a href=''>Retrofit</a>",
+      "url": "https://github.com/square/retrofit",
+      "size": 12,
+      "padding": [
+        10,
+        5,
+        10,
+        5
+      ]
+    },
+    {
+      "type": "TextView",
+      "html": "<a href=''>Eisen-nbt</a>",
+      "url": "https://github.com/Eisenwave/eisen-nbt",
+      "size": 12,
+      "padding": [
+        10,
+        5,
+        10,
+        5
+      ]
+    },
+    {
+      "type": "TextView",
+      "html": "<a href=''>V8</a>",
+      "url": "https://github.com/v8/V8",
+      "size": 12,
+      "padding": [
+        10,
+        5,
+        10,
+        5
+      ]
+    },
+    {
+      "type": "TextView",
+      "html": "<a href=''>ScriptX</a>",
+      "url": "https://github.com/Tencent/ScriptX",
+      "size": 12,
+      "padding": [
+        10,
+        5,
+        10,
+        5
+      ]
+    }
+  ]
+}
