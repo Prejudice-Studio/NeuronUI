@@ -328,3 +328,8 @@ Update contents:
 
 # 2024.12.17  Andromeda
 - Support Version 7.2.6
+
+# 2025.2.2 Lydform
+- Support Version 7.3.6
+- Remove NoveXare 5.2 Cracked
+- Change shortcut key for [BuildTool]
