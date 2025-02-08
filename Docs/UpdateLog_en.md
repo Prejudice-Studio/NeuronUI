@@ -333,3 +333,7 @@ Update contents:
 - Support Version 7.3.6
 - Remove NoveXare 5.2 Cracked
 - Change shortcut key for [BuildTool]
+
+———fix———
+- fix wrong size
+- fix wrong version name
