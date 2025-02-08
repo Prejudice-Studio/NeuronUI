@@ -134,6 +134,7 @@
           "type": "ColorPicker",
           "key": "color",
           "name": "自定义颜色",
+          "size": 8,
           "color": "$TextColor",
           "padding": [
             10,
@@ -254,6 +255,7 @@
           "type": "ColorPicker",
           "key": "color",
           "name": "自定义颜色",
+          "size": 8,
           "color": "$TextColor",
           "padding": [
             10,
@@ -948,6 +950,7 @@
           "type": "ColorPicker",
           "key": "color",
           "name": "自定义颜色",
+          "size": 8,
           "color": "$TextColor",
           "padding": [
             10,
