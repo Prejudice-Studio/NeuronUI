@@ -337,3 +337,6 @@ Update contents:
 ———fix———
 - fix wrong size
 - fix wrong version name
+
+# 2025.2.12 Fuaime
+- Support Version 7.3.7
