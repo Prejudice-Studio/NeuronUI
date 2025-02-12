@@ -2,7 +2,6 @@
     "name": "Neuron UI Lydform-fix",
     "theme": "Theme.Material3.DayNight.NoActionBar",
     "ui": [
-        "Neuron_extra",
         "Neuron_main",
         "Neuron_combat",
         "Neuron_player",
