@@ -53,19 +53,6 @@
     },
     {
       "type": "TextView",
-      "name": "Extra",
-      "color": "$TextColor",
-      "size": 12,
-      "padding": [
-        5,
-        5,
-        5,
-        5
-      ],
-      "open": "Neuron_extra"
-    },
-    {
-      "type": "TextView",
       "name": "Combat",
       "color": "$TextColor",
       "size": 12,
