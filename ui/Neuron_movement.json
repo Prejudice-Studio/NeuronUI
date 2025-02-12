@@ -141,6 +141,13 @@
           "checked": true
         },
         {
+          "type": "CheckBox",
+          "key": "lock_y",
+          "name": "锁定Y轴",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
           "type": "SeekBar",
           "key": "offset",
           "format": "高度偏移%.2f",
