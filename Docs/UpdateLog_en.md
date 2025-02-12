@@ -340,3 +340,5 @@ Update contents:
 
 # 2025.2.12 Fuaime
 - Support Version 7.3.7
+- Remove Extra Menu
+- Remove Bhop and EscapeSpace with their Shoutcuts , Scripts
