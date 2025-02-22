@@ -342,3 +342,7 @@ Update contents:
 - Support Version 7.3.7
 - Remove Extra Menu
 - Remove Bhop and EscapeSpace with their Shoutcuts , Scripts
+
+# 2025.2.22 Ceirseacha
+- Support Version 7.3.9
+- Add shortcut key for [Reach] and [Step]
