@@ -475,13 +475,6 @@
       "tag": "fun_auto_clicker",
       "items": [
         {
-          "type": "CheckBox",
-          "key": "no_break",
-          "name": "不会中断",
-          "color": "$TextColor",
-          "size": 8
-        },
-        {
           "type": "SeekBar",
           "key": "delay",
           "format": "操作延迟%d",
