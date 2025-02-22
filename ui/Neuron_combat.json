@@ -337,6 +337,61 @@
     },
     {
       "type": "Switch",
+      "name": "击中范围",
+      "color": "$TextColor",
+      "size": 12,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_Reach.png",
+        "on":"open/NeuronOn_Reach.png",
+        "icon":"open/NeuronOn_Reach.png"
+      },
+      "tag": "fun_reach",
+      "items": [
+        {
+          "type": "SeekBar",
+          "key": "reach",
+          "format": "当前范围%.2f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 7.0,
+          "min": 1.0,
+          "max": 10000.0
+        },
+        {
+          "type": "SeekBar",
+          "key": "max_reach",
+          "format": "最大范围%.2f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 7.0,
+          "min": 1.0,
+          "max": 10000.0
+        }
+      ]
+    },
+    {
+      "type": "Switch",
       "name": "智能队友",
       "color": "$TextColor",
       "size": 12,
