@@ -169,6 +169,45 @@
     },
     {
       "type": "Switch",
+      "name": "一步登天",
+      "color": "$TextColor",
+      "size": 10,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [65, 65],
+        "no_circle": true,
+        "off":"close/NeuronOff_Step.png",
+        "on":"open/NeuronOn_Step.png",
+        "icon":"open/NeuronOn_Step.png"
+      },
+      "tag": "fun_step",
+      "items": [
+        {
+          "type": "SeekBar",
+          "key": "height",
+          "format": "高度%.2f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 1.0,
+          "min": 0.5625,
+          "max": 10.0
+        }
+      ]
+    },
+    {
+      "type": "Switch",
       "name": "点击传送",
       "color": "$TextColor",
       "size": 12,
