@@ -22,7 +22,6 @@
     "script": [
     "base_script.js",
     "build_tool.js",
-    "new_touch_control.js",
-    "py_executor.js"
+    "new_touch_control.js"
     ]
 }
