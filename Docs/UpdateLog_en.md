@@ -346,3 +346,8 @@ Update contents:
 # 2025.2.22 Ceirseacha
 - Support Version 7.3.9
 - Add shortcut key for [Reach] and [Step]
+
+# 2025.3.3 Kort
+- support Version 7.4.1
+- Add shortcut key for [FreeCamera] and [AutoBow]
+- Change shortcut key for [ViewModel]
