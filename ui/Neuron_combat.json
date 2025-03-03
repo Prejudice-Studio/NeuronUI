@@ -279,7 +279,81 @@
           "name": "分离相机",
           "color": "$TextColor",
           "size": 8
+        },
+        {
+          "type": "CheckBox",
+          "key": "bow",
+          "name": "弓箭模式",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "CheckBox",
+          "key": "hit_box",
+          "name": "碰撞箱模式",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "SeekBar",
+          "key": "gravity",
+          "format": "重力影响%.3f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 0.002,
+          "min": 0.001,
+          "max": 0.005
         }
+      ]
+    },
+    {
+      "type": "Switch",
+      "name": "自动开弓",
+      "color": "$TextColor",
+      "size": 10,
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [
+          65,
+          65
+        ],
+        "no_circle": true,
+        "off": "close/NeuronOff_AutoBow.png",
+        "on": "open/NeuronOn_AutoBow.png",
+        "icon": "open/NeuronOn_AutoBow.png"
+      },
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "tag": "fun_auto_bow",
+      "items": [
+        {
+          "type": "SeekBar",
+          "key": "duration",
+          "format": "时长%d",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 20,
+          "min": 2,
+          "max": 20
+        }
+      ]
+    },
       ]
     },
     {
