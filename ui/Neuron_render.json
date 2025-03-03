@@ -305,6 +305,30 @@
     },
     {
       "type": "Switch",
+      "name": "自由视角",
+      "color": "$TextColor",
+      "size": 10,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [
+          65,
+          65
+        ],
+        "no_circle": true,
+        "off": "close/NeuronOff_FreeCam.png",
+        "on": "open/NeuronOn_FreeCam.png",
+        "icon": "open/NeuronOn_FreeCam.png"
+      },
+      "tag": "fun_free_camera"
+    },
+    {
+      "type": "Switch",
       "name": "视图模型",
       "color": "$TextColor",
       "size": 10,
