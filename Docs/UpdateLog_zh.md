@@ -219,7 +219,7 @@
 - 适配7.0.3
 - 删除 [栓绳连线] (TetherLine) [粒子连线] (ParticleLine) [执行宠物指令] (Command) 的快捷键
 - 删除 『Command』 菜单
-- 修改 [无粒子显示] (NoPatticle) 的菜单位置
+- 修改 [无粒子显示] (NoParticle) 的菜单位置
 -  『Quick』 新增 [崩溃服务器] (Crasher)
 - 删除了 [网络服绕En(仅伏羲)] js
 - 删除多余js，优化体积
