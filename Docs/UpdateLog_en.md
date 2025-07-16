@@ -351,3 +351,6 @@ Update contents:
 - support Version 7.4.1
 - Add shortcut key for [FreeCamera] and [AutoBow]
 - Change shortcut key for [ViewModel]
+
+# 2025.7.12 Methadone
+- Support Version 7.5.2

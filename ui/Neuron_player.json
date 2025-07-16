@@ -414,6 +414,20 @@
           "size": 8
         },
         {
+          "type": "CheckBox",
+          "key": "minecraft:diamond_ore",
+          "name": "钻石矿",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
+          "type": "CheckBox",
+          "key": "minecraft:ancient_debris",
+          "name": "远古残骸",
+          "color": "$TextColor",
+          "size": 8
+        },
+        {
           "type": "SeekBar",
           "key": "distance",
           "format": "距离%.2f",

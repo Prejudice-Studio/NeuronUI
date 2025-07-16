@@ -663,6 +663,22 @@
           "color": "$TextColor",
           "size": 8,
           "checked": true
+        },
+        {
+          "type": "SeekBar",
+          "key": "line_width",
+          "format": "线条宽度%.1f",
+          "color": "$TextColor",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 3.0,
+          "min": 1.0,
+          "max": 8.0
         }
       ]
     },

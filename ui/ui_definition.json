@@ -1,5 +1,5 @@
 {
-    "name": "Neuron UI Ceirseacha",
+    "name": "Neuron UI Methadone",
     "theme": "Theme.Material3.DayNight.NoActionBar",
     "ui": [
         "Neuron_main",
@@ -16,12 +16,12 @@
     ],
     "fun": [
     "script_build_tool",
-    "script_new_touch_control",
-    "script_py_executor"
+    "script_py_executor",
+    "fun_custom_01",
+    "fun_custom_02"
     ],
     "script": [
     "base_script.js",
-    "build_tool.js",
-    "new_touch_control.js"
+    "build_tool.js"
     ]
 }

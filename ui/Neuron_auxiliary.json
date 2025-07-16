@@ -502,56 +502,6 @@
       "tag": "script_build_tool"
     },
     {
-      "type": "Switch",
-      "name": "启用新触控",
-      "color": "$TextColor",
-      "size": 10,
-      "padding": [
-        5,
-        5,
-        5,
-        5
-      ],
-      "shortcut": {
-        "type": "CheckedButton",
-        "params": [65, 65],
-        "no_circle": true,
-        "off":"close/NeuronOff_NewTouchCtrl.png",
-        "on":"open/NeuronOn_NewTouchCtrl.png",
-        "icon":"open/NeuronOn_NewTouchCtrl.png"
-      },
-      "tag": "script_new_touch_control",
-      "items": [
-        {
-          "type": "RadioGroup",
-          "key": "mode",
-          "name": "控制模式",
-          "color": "$TextColor",
-          "size": 8,
-          "items": [
-            {
-              "key": "touch",
-              "name": "摇杆点击进行互动",
-              "color": "$TextColor",
-              "size": 8
-            },
-            {
-              "key": "crosshair",
-              "name": "方向键并点击进行互动",
-              "color": "$TextColor",
-              "size": 8
-            },
-            {
-              "key": "classic",
-              "name": "摇杆并瞄准十字线",
-              "color": "$TextColor",
-              "size": 8
-            }
-          ]
-        }
-      ]
-    },
-    {
       "type": "TextView",
       "name": "进入本地游戏",
       "color": "$TextColor",
